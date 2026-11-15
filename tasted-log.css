@@ -1,0 +1,207 @@
+.tasted-log {
+  padding-bottom: clamp(36px, 5vw, 64px);
+}
+.tasted-note {
+  max-width: 650px;
+  margin-inline: auto;
+  padding: clamp(17px, 3vw, 26px);
+  border: 1px solid #e0d7c4;
+  border-radius: 14px;
+  background: #fffaf0;
+  box-shadow: 0 8px 28px #4436260a;
+}
+.tasted-note-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tasted-note-head .eyebrow { margin-bottom: 3px; }
+.tasted-note h2 {
+  font-size: clamp(20px, 3vw, 27px);
+  line-height: 1.24;
+}
+.tasted-note-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.tasted-export-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 42px;
+  padding: 5px 9px;
+  color: var(--rust);
+  border: 1px solid #d8bca7;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.tasted-export-open:not(:disabled):hover { background: #f2e1c9; }
+.tasted-export-open svg { width: 14px; height: 14px; }
+.tasted-stamp {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  flex: 0 0 auto;
+  width: 62px;
+  height: 62px;
+  border: 3px double #bf886c;
+  border-radius: 50%;
+  color: var(--rust);
+  line-height: 1.05;
+  text-align: center;
+  transform: rotate(-8deg);
+}
+.tasted-stamp strong { font: 600 24px/1 var(--serif); }
+.tasted-stamp small { margin-top: 3px; font-size: 10px; }
+.tasted-empty {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.tasted-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tasted-list li {
+  min-width: 0;
+  border: 1px solid #e3d3bc;
+  border-radius: 8px;
+  background: #f8efde;
+}
+.tasted-row { display: flex; align-items: stretch; }
+.tasted-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 1;
+  min-width: 0;
+  min-height: 42px;
+  padding: 6px 10px;
+  text-align: left;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.tasted-item svg { flex-shrink: 0; width: 15px; height: 15px; color: var(--rust); }
+.tasted-item:hover { color: var(--rust); }
+.tasted-rate {
+  align-self: stretch;
+  flex-shrink: 0;
+  min-height: 42px;
+  padding: 0 7px;
+  color: var(--rust);
+  font-size: 11px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.tasted-rate:hover, .tasted-rate[aria-expanded="true"] { background: #f2e1c9; }
+.tasted-rate[data-tier="hang"] { color: #ad3b2c; }
+.tasted-rate[data-tier="top"] { color: #8d501f; }
+.tasted-rate[data-tier="elite"] { color: #6c6526; }
+.tasted-rate[data-tier="npc"] { color: #4d6657; }
+.tasted-rate[data-tier="la"] { color: #665d75; }
+.tasted-rating-panel {
+  border-top: 1px dashed #dcc9ad;
+  padding: 8px 9px;
+  font-size: 11px;
+}
+.tasted-rating-panel p { margin-bottom: 6px; color: #796b5a; }
+.tasted-rating-options { display: flex; flex-wrap: wrap; gap: 5px; }
+.tasted-rating-options button {
+  min-height: 38px;
+  min-width: 34px;
+  padding: 3px 7px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #f2e3c9;
+  font-weight: 650;
+}
+.tasted-rating-options [data-tasted-tier="hang"] { color: #a4382d; background: #f8d8cc; }
+.tasted-rating-options [data-tasted-tier="top"] { color: #8b501f; background: #f9dfbf; }
+.tasted-rating-options [data-tasted-tier="elite"] { color: #665c1d; background: #f6edbd; }
+.tasted-rating-options [data-tasted-tier="npc"] { color: #436153; background: #e1e9d9; }
+.tasted-rating-options [data-tasted-tier="la"] { color: #5e536d; background: #eae1ec; }
+.tasted-rating-options button:is(:hover, [aria-pressed="true"]) { border-color: currentColor; }
+.tasted-clear { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; font-size: 11px; min-height: 34px; }
+.tasted-remove {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  color: #796b5a;
+}
+.tasted-remove:hover { color: var(--rust); background: #f2e1c9; }
+.tasted-remove svg { width: 14px; height: 14px; }
+.tasted-browse { margin-top: 7px; min-height: 34px; color: var(--rust); }
+.tasted-shortcut { color: var(--rust); text-underline-offset: 3px; }
+.tasted-shortcut:hover { text-decoration: underline; }
+.tasted-export-dialog { width: min(675px, calc(100% - 24px)); }
+.tasted-export-dialog .eyebrow { margin-bottom: 5px; }
+.tasted-export-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 205px) minmax(0, 1fr);
+  align-items: start;
+  gap: 17px;
+}
+.tasted-export-controls { display: grid; gap: 8px; align-content: start; }
+.tasted-export-controls > label { color: var(--muted); font-size: 12px; }
+.tasted-export-controls input[type="date"] {
+  min-width: 0;
+  min-height: 42px;
+  padding: 5px 8px;
+  border: 1px solid #d8cdb9;
+  border-radius: 5px;
+  background: #fffaf0;
+}
+.tasted-photo-label {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 4px 8px;
+  border: 1px dashed #d8bca7;
+  border-radius: 5px;
+  color: var(--rust);
+  font-size: 12px;
+}
+.tasted-photo-label svg { width: 14px; height: 14px; }
+.tasted-export-actions { display: grid; gap: 7px; margin-top: 6px; }
+.tasted-export-actions .button { min-height: 44px; padding: 6px 12px; }
+.tasted-export-controls p { font-size: 11px; line-height: 1.5; }
+.tasted-export-preview canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 60dvh;
+  object-fit: contain;
+}
+.tasted-export-pages { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 11px; }
+.tasted-export-pages button { min-height: 44px; padding: 3px 6px; color: var(--rust); }
+html[lang="en"] .tasted-note h2 { font-size: clamp(19px, 2.6vw, 24px); }
+@media (max-width: 760px) {
+  .result-line:has(.tasted-shortcut:not([hidden])) { flex-wrap: wrap; gap: 4px 12px; }
+  .tasted-shortcut { display: flex; align-items: center; flex-basis: 100%; min-height: 44px; }
+}
+@media (max-width: 540px) {
+  .tasted-list { grid-template-columns: 1fr; }
+  .tasted-note-tools { gap: 7px; }
+  .tasted-stamp { width: 48px; height: 48px; }
+  .tasted-stamp strong { font-size: 20px; }
+  .tasted-stamp small { margin-top: 2px; font-size: 9px; }
+  .tasted-remove { flex-basis: 44px; }
+  .tasted-item, .tasted-browse, .tasted-rate, .tasted-rating-options button, .tasted-export-open { min-height: 44px; }
+  .tasted-export-layout { grid-template-columns: 1fr; gap: 10px; }
+  .tasted-export-controls { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+  .tasted-export-controls > :is(.tasted-export-actions, p) { grid-column: 1 / -1; }
+  .tasted-export-actions { grid-template-columns: 1fr 1fr; }
+}
+@media print { .tasted-log { display: none !important; } }

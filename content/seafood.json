@@ -1,0 +1,579 @@
+{
+  "cards": [
+    {
+      "id": "gaoluo-oyster",
+      "art": "oyster",
+      "name": "生蚝 · 高螺明蚝",
+      "tag": "冬季主角 · 海丰大湖",
+      "verse": "年关围炉煮生蚝",
+      "body": "大湖镇高螺村有养蚝的日常。天气转凉，点一盘蒸蚝或一锅姜葱蚝煲，在热气里慢慢尝它的鲜甜。想多一点香口，也可以点蚝烙。",
+      "prep": "清蒸 · 姜葱焗 · 蚝煲"
+    },
+    {
+      "id": "lobster",
+      "art": "lobster",
+      "name": "海龙虾",
+      "tag": "秋冬至早春可留意 · 到店问产地",
+      "verse": "一盘龙虾，几个人分着吃",
+      "body": "龙虾肉紧实鲜甜，清蒸就能吃出本味。汕尾时令资料以锦绣龙虾为例，给出约10月至次年3月的赏味参考。酒楼里的龙虾有不同品种和来源，到店先问清，再看当天货色。",
+      "prep": "清蒸 · 蒜蓉蒸 · 龙虾粥"
+    },
+    {
+      "id": "cuttlefish",
+      "art": "cuttlefish",
+      "name": "墨斗 · 墨鱼",
+      "tag": "秋季风味 · 汕尾沿海",
+      "verse": "秋风一凉，想吃墨斗",
+      "body": "汕尾人把墨鱼叫作墨斗。肉厚，快炒时脆嫩，焖煮又会吸进汤汁。11月还能循着秋味找一找，12月遇到鲜货再点。想尝地方吃法，可以来一碗弹牙的墨斗丸。",
+      "prep": "鲜墨斗炒时蔬 · 焖墨斗 · 墨斗丸"
+    },
+    {
+      "id": "chenzhou-oyster",
+      "art": "oyster",
+      "name": "晨洲蚝",
+      "tag": "汕尾周边 · 城区红草镇晨洲村",
+      "verse": "冬至到清明，蚝肉肥晶晶",
+      "body": "晨洲村靠近长沙湾，三江淡水在这一带与海水相遇，养出了鲜甜肥嫩的蚝。想吃蚝本身的甜，先试清蒸。喜欢更香一些的口味，点姜葱焗。传统赏味说法从冬至延续到清明前后。",
+      "prep": "清蒸 · 姜葱焗 · 蚝烙"
+    },
+    {
+      "id": "mayu",
+      "art": "eel",
+      "name": "麻鱼 · 海鳗",
+      "tag": "11月中旬至次年1月 · 汕尾红海湾",
+      "verse": "麻鱼炒咸菜，多添半碗饭",
+      "body": "红海湾一带的麻鱼约从11月中旬到次年1月较肥美。肉细嫩紧致，鱼皮带点嚼劲。配酸咸爽脆的咸菜炒，很下饭。想吃得柔和些，砂锅麻鱼粥也值得点。",
+      "prep": "咸菜炒麻鱼 · 砂锅麻鱼粥"
+    },
+    {
+      "id": "mayou",
+      "art": "fish",
+      "name": "马友鱼",
+      "tag": "冬日脂香 · 广东沿海时令参考",
+      "verse": "一面煎金黄，鱼香就起来了",
+      "body": "广东沿海的入冬食材指南把马友鱼列入12月参考。肉肥的时候自带脂香，煎到外面微焦，里面仍然鲜嫩。桌上已经有清蒸鱼和白灼虾时，香煎马友正好换一种口感。到店可问今天有没有好货。",
+      "prep": "香煎 · 清蒸"
+    },
+    {
+      "id": "paste-crab",
+      "art": "crab",
+      "name": "膏蟹 · 青蟹",
+      "tag": "秋蟹肥时 · 海丰联安、梅陇有养殖",
+      "verse": "揭开蟹壳，先看那一口膏",
+      "body": "想吃绵密厚实的蟹膏，可以问问膏蟹。海丰联安、梅陇一带有膏蟹养殖，晚秋已有集中起捕记录。11月可以继续留意肥满的批次，冬天按到货挑。清蒸适合慢慢尝蟹膏本身的滋味。",
+      "prep": "清蒸 · 姜葱炒 · 蟹粥"
+    },
+    {
+      "id": "three-eye-crab",
+      "art": "crab",
+      "name": "三眼蟹 · 三目鲚",
+      "tag": "肉实鲜甜 · 汕尾本港海蟹",
+      "verse": "三点在壳上，鲜甜在肉里",
+      "body": "汕尾人也叫它三目鲚，蟹壳上的三个斑点很好认。喜欢紧实、鲜甜的蟹肉，可以挑一只肥壮的清蒸。汕尾晚秋渔港有集中上市的记录，入冬后就看当天货色。",
+      "prep": "清蒸 · 姜葱炒"
+    },
+    {
+      "id": "red-flower-crab",
+      "art": "crab",
+      "name": "红花蟹",
+      "tag": "蟹肉细嫩 · 汕尾本港海蟹",
+      "verse": "一身花衣，蒸出一口清甜",
+      "body": "红花蟹的壳上有显眼的花纹，肉感偏细嫩。喜欢清甜蟹肉，可以拿来清蒸。汕尾晚秋的蟹档常有几种蟹同台，和三眼蟹、膏蟹选一种自己喜欢的就够。",
+      "prep": "清蒸 · 姜葱炒"
+    },
+    {
+      "id": "flower-crab",
+      "art": "crab",
+      "name": "花蟹",
+      "tag": "家常炒蟹 · 汕尾本港可见",
+      "verse": "姜葱一爆，蟹香上桌",
+      "body": "花蟹的肉细嫩，适合切件用姜葱炒成一盘大家夹着吃的热菜。晚秋的汕尾蟹档会看到它，其他月份碰到肥壮的也值得点。",
+      "prep": "姜葱炒 · 清蒸"
+    },
+    {
+      "id": "tiger-shrimp",
+      "art": "shrimp",
+      "name": "九节虾",
+      "tag": "清甜弹牙 · 海丰有养殖",
+      "verse": "白灼一碟，先尝虾的甜",
+      "body": "海丰有九节虾养殖，来吃海鲜时可以把它当作一道常见的搭配。虾肉紧实，白灼清甜，盐焗更香。桌上点了焗蚝或咸菜麻鱼，配一碟白灼虾刚刚好。",
+      "prep": "白灼 · 盐焗"
+    },
+    {
+      "id": "white-shrimp",
+      "art": "shrimp",
+      "name": "白虾 · 南美白对虾",
+      "tag": "清爽好搭 · 海丰有养殖",
+      "verse": "热虾剥开，白白嫩嫩",
+      "body": "南美白对虾是海丰海水养殖的主要品种之一。想给一桌海鲜加一道大家都好分的菜，可以点白灼，或让蒜蓉和虾一起蒸出香气。夏天逛市场时也可以留意养殖虾。",
+      "prep": "白灼 · 蒜蓉蒸"
+    },
+    {
+      "id": "mantis-shrimp",
+      "art": "mantis",
+      "name": "虾姑 · 皮皮虾",
+      "tag": "肉量、膏量看当批 · 汕尾渔港可见",
+      "verse": "慢慢剥壳，尝一口虾鲜",
+      "body": "汕尾常把皮皮虾叫作虾姑。清蒸吃肉的甜，椒盐吃壳边的香，喜欢膏的可以到店问哪批更饱满。当地过年有吃虾姑的说法，其他月份有好货也值得点。",
+      "prep": "清蒸 · 椒盐"
+    },
+    {
+      "id": "sea-shrimp",
+      "art": "shrimp",
+      "name": "本港海虾",
+      "tag": "开渔后可留意 · 汕尾本港到货",
+      "verse": "码头的鲜，白灼就好",
+      "body": "开渔后可以多问一句今天有什么本港海虾。挑到好货，白灼能吃出鲜甜和弹性。想吃得香口一点，姜葱或盐焗也合适。虾种会随渔获变化，现场按货色挑最有意思。",
+      "prep": "白灼 · 盐焗 · 姜葱炒"
+    },
+    {
+      "id": "mackerel",
+      "art": "fish",
+      "name": "马鲛鱼",
+      "tag": "春季可先问 · 汕尾沿海",
+      "verse": "马鲛煎一面，焦香满桌",
+      "body": "马鲛的鱼肉扎实，香煎可以尝到边缘的焦香。汕尾的春季海味里常有它，也有把鱼肉做成鱼丸、下到粿条汤里的吃法。春季可以先问，开渔以后再随当天鱼货挑。",
+      "prep": "香煎 · 煮汤 · 马鲛鱼丸"
+    },
+    {
+      "id": "pomfret",
+      "art": "fish",
+      "name": "鲳鱼",
+      "tag": "蒸鱼之选 · 汕尾渔获中可见",
+      "verse": "一条清蒸鱼，鲜味够一家分",
+      "body": "想给饭桌加一条清爽的鱼，可以问店里今天是哪一种鲳鱼。鱼肉细嫩的适合清蒸，喜欢一点焦香也可以香煎。开渔后在汕尾码头能见到鲳鱼，点单时看看鱼的状态再定。",
+      "prep": "清蒸 · 香煎"
+    },
+    {
+      "id": "ribbonfish",
+      "art": "fish",
+      "name": "带鱼",
+      "tag": "香煎下饭 · 汕尾市场可见",
+      "verse": "鱼段煎香，再添一口饭",
+      "body": "带鱼切成段，干煎有焦香，红烧又是另一种下饭味。想从一桌清蒸白灼里换换口味，选它很合适。到店可以问问这批带鱼的来源和保鲜状态。",
+      "prep": "干煎 · 红烧"
+    },
+    {
+      "id": "squid",
+      "art": "cuttlefish",
+      "name": "鲜鱿鱼",
+      "tag": "爽脆鲜甜 · 汕尾沿海按货色挑",
+      "verse": "鲜鱿卷起来，脆嫩正好",
+      "body": "鲜鱿快炒会卷起来，入口爽脆带一点弹。配芹菜、青椒炒可以吃出锅气，白灼更清爽。夏天也值得留意这口当地风味，选购时可以问清当天货源。",
+      "prep": "白灼 · 姜葱炒 · 鲜鱿炒时蔬"
+    },
+    {
+      "id": "grouper",
+      "art": "fish",
+      "name": "石斑鱼",
+      "tag": "清蒸鱼之选 · 汕尾海洋牧场有养殖",
+      "verse": "蒸汽一开，先夹一筷鱼肉",
+      "body": "石斑蒸好后鱼肉细嫩，适合和家人分着吃。汕尾城区海洋牧场有石斑养殖，秋冬有陆续上市的记录。想要一条清鲜的主菜，问问当天有什么品种和大小，再按人数点。",
+      "prep": "清蒸 · 姜葱焖"
+    },
+    {
+      "id": "cobia",
+      "art": "fish",
+      "name": "海鲡鱼 · 军曹鱼",
+      "tag": "初秋可留意 · 汕尾城区江牡岛有养殖",
+      "verse": "一条海鲡，蒸得鲜，煎得香",
+      "body": "海鲡鱼肉紧实，清蒸有鱼鲜，香煎多一分脂香。秋天可以优先留意。汕尾养殖也有较稳定的供应，其他月份要找一条全家分着吃的鱼，可以把它放进候选。",
+      "prep": "清蒸 · 香煎 · 红烧"
+    },
+    {
+      "id": "golden-pompano",
+      "art": "fish",
+      "name": "金鲳鱼",
+      "tag": "养殖海鱼 · 汕尾城区海洋牧场",
+      "verse": "蒸一条金鲳，家常也鲜",
+      "body": "汕尾城区海洋牧场有金鲳鱼养殖，也有秋季批次上市的记录。想点一条方便全桌分着吃的鱼，可以看当天的大小和货色。清蒸清鲜，香煎的表皮更香。",
+      "prep": "清蒸 · 香煎"
+    },
+    {
+      "id": "purple-urchin",
+      "art": "urchin",
+      "name": "捷胜紫海胆 · 石针",
+      "tag": "春至初夏可留意 · 汕尾城区捷胜镇",
+      "verse": "礁石藏一口鲜，炒进饭里刚刚好",
+      "body": "汕尾城区捷胜一带的紫海胆，当地人叫它石针。海胆黄细腻鲜甜，做炒饭香气足，蒸蛋更柔嫩。春季至初夏可以留意，清明前后尤其值得问当天的货。",
+      "prep": "海胆炒饭 · 海胆蒸蛋 · 海胆粿"
+    },
+    {
+      "id": "clam",
+      "art": "clam",
+      "name": "花甲 · 花蛤",
+      "tag": "清甜贝类 · 海丰餐桌按批次挑",
+      "verse": "蛤壳开了，汤也鲜了",
+      "body": "想加一道清甜的贝类，花甲是容易搭配的选择。葱姜一炒鲜香十足，煮汤又清爽。天气热时特别适合点一份，其他时候也可以看店里当天有没有好货。",
+      "prep": "姜葱炒花甲 · 花甲汤"
+    },
+    {
+      "id": "scallop",
+      "art": "scallop",
+      "name": "扇贝",
+      "tag": "蒸贝好搭 · 海丰市场按产地和批次挑",
+      "verse": "粉丝接住贝汁，蒜香跟着来",
+      "body": "扇贝适合蒜蓉粉丝蒸，贝肉鲜甜，粉丝还能接住汤汁。想让一桌鱼虾有一点不同的口感，可以加这一道。买贝类时看当天批次，也可以请店里介绍产地。",
+      "prep": "蒜蓉粉丝蒸 · 清蒸"
+    },
+    {
+      "id": "bitter-whelk",
+      "art": "whelk",
+      "name": "苦螺",
+      "tag": "先微苦后回甘 · 汕尾沿海风味",
+      "verse": "一枚苦螺，慢慢尝到回甘",
+      "body": "想试点地方风味，可以问有没有苦螺。螺肉先微苦，随后有回甘，白灼蘸姜醋很合适。春季多雨时可以留意，现场有好货再点。",
+      "prep": "白灼 · 姜醋蘸食"
+    },
+    {
+      "id": "barnacle",
+      "art": "barnacle",
+      "name": "湿斗 · 藤壶",
+      "tag": "礁石小海味 · 汕尾沿海风味",
+      "verse": "一小口咸鲜，像尝了海风",
+      "body": "汕尾把这种附在礁石上的小海鲜叫湿斗。煮熟后肉少却咸鲜，有人觉得口感像蟹膏。当地春初有煮湿斗的食俗，遇到有好货的小店，可以少点一些尝尝。",
+      "prep": "水煮 · 蘸酱油"
+    }
+  ],
+  "months": [
+    {
+      "season": "冬日围炉",
+      "label": "冬蚝正鲜，麻鱼还肥",
+      "intro": "一月的桌上可以先留一个位置给蚝，再问问红海湾麻鱼。想吃鱼肉的脂香，可以看看马友，想加一道大家分着吃的大菜也可以挑龙虾。",
+      "priority": [
+        "gaoluo-oyster",
+        "mayu",
+        "chenzhou-oyster",
+        "mayou",
+        "lobster"
+      ],
+      "market": [
+        "tiger-shrimp",
+        "white-shrimp",
+        "paste-crab",
+        "grouper",
+        "clam",
+        "cuttlefish"
+      ],
+      "menu": "姜葱焗蚝或蚝粥\n咸菜炒麻鱼\n白灼九节虾\n加一份清炒时蔬",
+      "question": "今天哪种蚝肥？有红海湾麻鱼吗？想来一份咸菜炒麻鱼。"
+    },
+    {
+      "season": "冬日围炉",
+      "label": "白灼清蒸，分一桌冬鲜",
+      "intro": "冬蚝还值得吃。想搭点有弹性的，问问当天虾姑的肉量、膏量，再看有没有九节虾或鲜鱼。遇见湿斗也可以少点一份尝地方口味。",
+      "priority": [
+        "gaoluo-oyster",
+        "chenzhou-oyster",
+        "lobster"
+      ],
+      "market": [
+        "mantis-shrimp",
+        "tiger-shrimp",
+        "paste-crab",
+        "barnacle",
+        "grouper",
+        "cobia",
+        "clam",
+        "cuttlefish"
+      ],
+      "menu": "清蒸蚝\n椒盐虾姑或白灼九节虾\n选一条当天的鲜鱼清蒸",
+      "question": "今天的虾姑是肉厚还是带膏？想蒸一盘蚝，哪批肉更饱满？"
+    },
+    {
+      "season": "春鲜上桌",
+      "label": "春马鲛上桌，留意第一口海胆",
+      "intro": "春天可以从香煎马鲛吃起。天气暖起来，开始问问捷胜紫海胆的货色。清明前遇到饱满的晨洲蚝，也可以把冬鲜再留一顿。",
+      "priority": [
+        "mackerel",
+        "purple-urchin",
+        "chenzhou-oyster",
+        "lobster"
+      ],
+      "market": [
+        "mantis-shrimp",
+        "white-shrimp",
+        "clam",
+        "grouper",
+        "cobia",
+        "cuttlefish",
+        "paste-crab"
+      ],
+      "menu": "香煎马鲛\n海胆炒饭或海胆蒸蛋\n白灼虾配花甲汤",
+      "question": "今天有适合香煎的马鲛吗？捷胜紫海胆这批怎么样？"
+    },
+    {
+      "season": "春鲜上桌",
+      "label": "清明海胆，带一点螺鲜",
+      "intro": "清明前后想尝汕尾海胆，可以先问捷胜紫海胆。春马鲛还适合香煎，多雨时也可以找一份苦螺，试试先苦后甘的口感。",
+      "priority": [
+        "purple-urchin",
+        "mackerel",
+        "bitter-whelk"
+      ],
+      "market": [
+        "chenzhou-oyster",
+        "mantis-shrimp",
+        "tiger-shrimp",
+        "clam",
+        "pomfret",
+        "squid",
+        "paste-crab",
+        "scallop"
+      ],
+      "menu": "海胆炒饭\n香煎马鲛\n白灼九节虾\n有好货再加白灼苦螺",
+      "question": "有捷胜紫海胆可以做炒饭吗？今天有没有苦螺可以白灼？"
+    },
+    {
+      "season": "春尽夏初",
+      "label": "海胆接初夏，养殖虾蟹好搭",
+      "intro": "初夏还能问问捷胜紫海胆。进入伏季休渔后，点菜可以多看海丰养殖的白虾、九节虾和青蟹，再搭鱼或贝。想加鲜鱿，先问今天的货从哪里来。",
+      "priority": [
+        "purple-urchin"
+      ],
+      "market": [
+        "white-shrimp",
+        "tiger-shrimp",
+        "paste-crab",
+        "clam",
+        "scallop",
+        "grouper",
+        "cobia",
+        "golden-pompano",
+        "squid",
+        "bitter-whelk"
+      ],
+      "menu": "白灼虾\n清蒸养殖鱼或肥青蟹\n蒜蓉蒸贝\n海胆按当天货色加点",
+      "question": "今天有海丰养的九节虾或青蟹吗？想再蒸条鱼，哪种合适？"
+    },
+    {
+      "season": "春尽夏初",
+      "label": "花甲清甜，鲜鱿爽口",
+      "intro": "夏天想吃清爽，可以先看花甲和有好货的鲜鱿。海胆还有合适批次时也可以尝一点。养殖虾、青蟹和海鱼都很适合搭一桌。",
+      "priority": [
+        "clam",
+        "squid"
+      ],
+      "market": [
+        "purple-urchin",
+        "white-shrimp",
+        "tiger-shrimp",
+        "paste-crab",
+        "scallop",
+        "grouper",
+        "cobia",
+        "golden-pompano",
+        "bitter-whelk"
+      ],
+      "menu": "姜葱炒花甲\n白灼虾\n鲜鱿炒时蔬\n想喝汤也可以把花甲换成贝汤",
+      "question": "今天花甲和鲜鱿哪样好？有没有虾适合白灼？"
+    },
+    {
+      "season": "盛夏寻鲜",
+      "label": "盛夏蒸贝，养殖鱼虾配一桌",
+      "intro": "七月可以从扇贝、花甲这样的贝类点起，想吃鲜鱿就看当天货源。休渔期间也能从养殖供应里挑一条鱼、一份虾，桌上照样有鲜味。",
+      "priority": [
+        "scallop",
+        "clam",
+        "squid"
+      ],
+      "market": [
+        "white-shrimp",
+        "tiger-shrimp",
+        "paste-crab",
+        "cobia",
+        "grouper",
+        "golden-pompano",
+        "bitter-whelk"
+      ],
+      "menu": "蒜蓉粉丝蒸扇贝\n白灼虾\n清蒸金鲳或海鲡\n按货色添一份鲜鱿",
+      "question": "今天扇贝和花甲哪样好？金鲳和海鲡，哪种适合清蒸？"
+    },
+    {
+      "season": "盛夏寻鲜",
+      "label": "上半月挑养殖，下半月等渔港",
+      "intro": "八月分两段吃。开渔前可以选养殖鱼虾和贝类，开渔后再问本港海虾、鲜蟹和当天上岸的海鱼。返港时间看天气和渔船，先看货再点。",
+      "priority": [
+        "sea-shrimp",
+        "three-eye-crab",
+        "flower-crab",
+        "mackerel",
+        "pomfret",
+        "squid"
+      ],
+      "market": [
+        "white-shrimp",
+        "tiger-shrimp",
+        "paste-crab",
+        "mantis-shrimp",
+        "ribbonfish",
+        "golden-pompano",
+        "clam"
+      ],
+      "menu": "开渔前可点白灼养殖虾、蒸鱼、蒸贝\n开渔后看当天的海虾、蟹和海鱼\n鱼种随货色替换",
+      "question": "今天有什么养殖鱼虾？要是已经开渔，哪样本港海鲜是刚到的？"
+    },
+    {
+      "season": "秋风起",
+      "label": "开渔后鱼虾齐，蟹也可认真挑",
+      "intro": "开渔后，码头的鱼、虾、蟹都多了。可以先挑一条海鲡或当天的海鱼，再看看三眼蟹、花蟹和海虾。带鱼、马鲛和鲜鱿也可以随到货换着吃。",
+      "priority": [
+        "cobia",
+        "sea-shrimp",
+        "three-eye-crab",
+        "flower-crab",
+        "paste-crab"
+      ],
+      "market": [
+        "ribbonfish",
+        "mackerel",
+        "pomfret",
+        "mantis-shrimp",
+        "squid",
+        "golden-pompano",
+        "clam"
+      ],
+      "menu": "一条清蒸鱼\n一盘白灼海虾\n一款清蒸或姜葱蟹\n再选鲜鱿或贝类",
+      "question": "今天有本港海虾吗？三眼蟹和花蟹，哪样肉更饱满？"
+    },
+    {
+      "season": "秋风起",
+      "label": "秋风起，蟹和墨斗一起吃",
+      "intro": "晚秋可以从几种海蟹里挑一款喜欢的。想吃膏看膏蟹，想吃蟹肉看看三眼蟹或红花蟹。配一盘炒墨斗和白灼海虾，刚好有软有脆。",
+      "priority": [
+        "paste-crab",
+        "three-eye-crab",
+        "red-flower-crab",
+        "flower-crab",
+        "cuttlefish",
+        "sea-shrimp",
+        "cobia"
+      ],
+      "market": [
+        "ribbonfish",
+        "pomfret",
+        "mackerel",
+        "mantis-shrimp",
+        "lobster",
+        "clam"
+      ],
+      "menu": "清蒸膏蟹或三眼蟹\n白灼海虾\n墨斗炒时蔬\n想多一道主菜再点当天的鲜鱼",
+      "question": "今天想吃蟹膏，挑哪种蟹？有没有鲜墨斗可以炒时蔬？"
+    },
+    {
+      "season": "秋去冬来",
+      "label": "秋蟹未退，冬蚝和麻鱼接上",
+      "intro": "11月可以先问大湖高螺蚝和晚秋肥蟹。蚝肉饱满，就清蒸一盘。中旬起可以专门问红海湾麻鱼，龙虾和秋味还在的墨斗也值得留意。还想多一点变化，到店看看虾姑、鲜鱿、贝类和当天的海鱼。",
+      "priority": [
+        "gaoluo-oyster",
+        "paste-crab",
+        "three-eye-crab",
+        "mayu",
+        "lobster",
+        "cuttlefish"
+      ],
+      "market": [
+        "chenzhou-oyster",
+        "tiger-shrimp",
+        "mantis-shrimp",
+        "red-flower-crab",
+        "pomfret",
+        "clam",
+        "squid"
+      ],
+      "menu": "姜葱焗生蚝\n清蒸三眼蟹或膏蟹，选一种\n白灼九节虾\n咸菜炒麻鱼，中旬后有好货再点\n鲜墨斗炒时蔬\n青菜配米饭或粿条",
+      "question": "今天的高螺蚝肥不肥？膏蟹和三眼蟹，哪样更值得点？"
+    },
+    {
+      "season": "秋去冬来",
+      "label": "冬蚝、肥鱼和一锅热粥",
+      "intro": "12月可以让冬蚝做主角，再问问红海湾麻鱼和带脂香的马友鱼。冬至前后也可以看看晨洲蚝，想加一道分着吃的大菜就问问龙虾。蟹可以按肥满度挑，碰到好虾、鲜鱿或贝类就再添一道。",
+      "priority": [
+        "gaoluo-oyster",
+        "mayu",
+        "mayou",
+        "lobster",
+        "chenzhou-oyster"
+      ],
+      "market": [
+        "paste-crab",
+        "tiger-shrimp",
+        "mantis-shrimp",
+        "squid",
+        "cuttlefish",
+        "grouper",
+        "scallop",
+        "clam"
+      ],
+      "menu": "姜葱焗蚝或清蒸蚝\n香煎马友鱼\n砂锅麻鱼粥\n白灼虾或椒盐虾姑，选一种\n一款肥壮的蟹，或蒜蓉蒸贝\n一份清炒青菜",
+      "question": "今天哪批冬蚝最饱满？有马友鱼可以香煎，或有麻鱼可以煮粥吗？"
+    }
+  ],
+  "sources": [
+    {
+      "label": "海丰大湖镇高螺村的明蚝与养殖",
+      "url": "https://www.shanwei.gov.cn/slhwz/xqxw/content/post_920422.html"
+    },
+    {
+      "label": "海丰海水养殖品种与片区",
+      "url": "https://www.shanwei.gov.cn/shanwei/zwgk/jcxx/zwdt/qxxwa/content/post_1099658.html"
+    },
+    {
+      "label": "汕尾红草镇晨洲蚝的产地和传统赏味期",
+      "url": "https://www.shanwei.gov.cn/swtcj/csmp/hxmp/content/post_716713.html"
+    },
+    {
+      "label": "红海湾麻鱼的肥美期与咸菜炒麻鱼",
+      "url": "https://static.nfnews.com/content/202007/28/c3824521.html"
+    },
+    {
+      "label": "汕尾地方海鲜时令、名称与吃法",
+      "url": "https://www.shanwei.gov.cn/shanwei/swly/swtc/content/post_1268934.html"
+    },
+    {
+      "label": "汕尾捷胜紫海胆的产地和风味",
+      "url": "https://www.shanwei.gov.cn/shanwei/swly/swtc/content/post_1221332.html"
+    },
+    {
+      "label": "汕尾发布 · 捷胜海胆的春季赏味线索",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32919239"
+    },
+    {
+      "label": "南方＋ · 汕尾紫海胆从清明至初夏的赏味线索",
+      "url": "https://www.shanwei.gov.cn/shanwei/swly/lyzs/content/post_1269560.html"
+    },
+    {
+      "label": "汕尾日报 · 晚秋本港海蟹及海丰膏蟹起捕",
+      "url": "https://www.jynews.net/newsWeb/toDetail?desId=249415"
+    },
+    {
+      "label": "广东南海觅食指南 · 秋虾墨斗与冬季马友",
+      "url": "https://static.nfnews.com/content/202608/21/c12742728.html"
+    },
+    {
+      "label": "汕尾市农业农村局 · 2026年伏季休渔通告",
+      "url": "https://www.shanwei.gov.cn/shanwei/zwgk/jcxx/zfgg/bmgg/content/post_1243927.html"
+    },
+    {
+      "label": "汕尾市场监测 · 休渔期间水产供应",
+      "url": "https://www.shanwei.gov.cn/swdpb/wgk/jggk/content/post_1261300.html"
+    },
+    {
+      "label": "汕尾市场监测 · 开渔后海捕鱼虾蟹供应",
+      "url": "https://www.shanwei.gov.cn/swdpb/zhuanti/jgjc/content/post_1283806.html"
+    },
+    {
+      "label": "汕尾广播电视台 · 开渔后的马宫、甲子渔港",
+      "url": "https://www.swrtv.com/swrtv/msxw/202608/96108660c76b4efdb43891fb313e72ff.shtml"
+    },
+    {
+      "label": "汕尾城区海洋牧场 · 金鲳、石斑秋冬上市",
+      "url": "https://www.shanwei.gov.cn/shanwei/zwgk/jcxx/zwdt/qxxwa/content/post_1276694.html"
+    },
+    {
+      "label": "汕尾美食记录 · 春马鲛、夏鱿鱼与海鲡供应",
+      "url": "https://www.shanwei.gov.cn/shanwei/swly/swtc/content/post_1235788.html"
+    }
+  ],
+  "sourceNote": "月历按公历排，综合当地赏味记录、上市情况和广东沿海时节。清明、冬至等节气用来标记大致的赏味窗口。以2026年为例，汕尾相关海域的伏季休渔是5月1日12时至8月16日12时，适用于规定捕捞作业，钓具除外。养殖鱼虾仍可供应，其他年份可看当年通告。到店可以先看看时令推荐，再按当天货色配一桌。"
+}

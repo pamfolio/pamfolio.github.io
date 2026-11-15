@@ -1,0 +1,43 @@
+/* Section navigation stays reachable as the travel notebook grows. */
+.site-header>nav{flex:1 1 auto;min-width:0;gap:9px 18px}
+.site-header>nav a{line-height:1.7;overflow-wrap:anywhere}
+.site-header>nav a:focus-visible{outline:2px solid var(--rust);outline-offset:5px;border-radius:2px}
+.site-header>nav[hidden],.site-header>nav a[hidden],.nav-plan[hidden],.mobile-plan[hidden]{display:none}
+.food-section-nav-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:-8px 0 26px;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.food-section-nav-row>.food-section-nav{flex:1 1 550px;flex-wrap:wrap;gap:10px 24px;margin:0;padding:0;border:0;min-width:0}
+.food-section-nav-row>.food-section-nav a{overflow-wrap:anywhere;max-width:100%}
+.food-section-nav-edit{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid #d4d9c7;border-radius:4px;font-size:10px;color:#7b876b;flex:0 0 auto}
+.food-section-nav-edit:hover{background:#e9eddf;color:#536c43}.food-section-nav-edit svg{width:12px;height:12px}
+.menu-label-subnav-fields{border:1px solid #d8decc;border-radius:6px;padding:0 14px 14px;margin:23px 0 0;min-width:0}
+.menu-label-subnav-fields legend{font:17px var(--serif);color:#6d805b;padding:0 6px}
+.menu-label-subnav-fields>label{display:flex;flex-direction:column;gap:5px;margin-top:15px;font-size:11px}
+.menu-label-subnav-fields label small{font-size:10px;color:#939d86}
+.menu-order-editor>.muted{margin-top:10px}
+.menu-order-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;margin-top:15px}
+.menu-order-item>label{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:11px}
+.menu-order-actions{display:flex;gap:5px}
+.menu-order-actions .button{padding:7px;min-height:36px;white-space:nowrap}
+.menu-order-actions .button:disabled{opacity:.45;cursor:default}
+#recommended-routes{scroll-margin-top:30px}
+.journey-overview{padding-bottom:0}
+.journey-overview .section-heading{flex-wrap:wrap;align-items:flex-start}
+.journey-overview .section-heading>.button{flex-shrink:0}
+.journey-overview .section-intro{white-space:pre-line}
+.journey-overview .food-section-nav-row{margin-bottom:0}
+@media print{.journey-overview{display:none!important}}
+@media(max-width:1200px) and (min-width:761px){
+ .site-header{flex-wrap:wrap;gap:16px;padding-top:18px;padding-bottom:15px}
+ .site-header>.brand{order:1}
+ .site-header>.header-actions{order:2;margin-left:auto}
+ .site-header>nav{order:3;flex:0 0 100%;gap:10px 25px}
+}
+@media(max-width:760px){
+ .food-section-nav-row{gap:12px;margin-top:0;align-items:flex-start}
+ .food-section-nav-row>.food-section-nav{flex-basis:100%;gap:10px 18px;line-height:1.9}
+ .food-section-nav-edit{padding:6px 8px;font-size:10px}
+ .site-header{height:auto;flex-wrap:wrap;row-gap:13px;padding-bottom:11px}
+ .site-header>.brand{order:1}
+ .site-header>.header-actions{order:2;margin-left:auto}
+ .site-header>nav{order:3;display:flex;flex:0 0 100%;width:100%;max-width:100%;flex-wrap:nowrap;justify-content:flex-start;gap:21px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#cad2be transparent;border-top:1px solid var(--line);padding:10px 2px 5px;scroll-padding-inline:4px;font-size:11px}
+ .site-header>nav a{flex:0 0 auto;max-width:150px;text-align:left;line-height:1.7;padding:2px 0}
+}

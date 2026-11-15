@@ -1,0 +1,80 @@
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 42px;
+  min-height: 36px;
+  padding: 4px 8px;
+  border: 1px solid #c8cbbd;
+  border-radius: 6px;
+  color: var(--rust);
+  font-size: 12px;
+  font-weight: 700;
+}
+.language-toggle:hover { background: #e9eddf; }
+.owner-english-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.owner-english-banner .button { min-height: 44px; padding: 6px 12px; }
+@media print { .owner-english-banner { display: none !important; } }
+
+html[lang="en"] {
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --english-leading: 1.45;
+}
+html[lang="en"] body { line-height: var(--english-leading); }
+html[lang="en"] .hero h1 {
+  font-size: clamp(2rem, 4.15vw, 3.35rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+html[lang="en"] .hero .eyebrow { margin-bottom: 16px; }
+html[lang="en"] .hero-intro { margin-top: 21px; }
+html[lang="en"] .section-heading { margin-bottom: clamp(18px, 2vw, 27px); }
+html[lang="en"] h2 { font-size: clamp(1.65rem, 2.55vw, 2.125rem); }
+html[lang="en"] :is(h2, h3, h4, h5, .food-name, .sight-name, .seafood-card-name) {
+  line-height: 1.2;
+  letter-spacing: -.015em;
+  overflow-wrap: anywhere;
+}
+html[lang="en"] :is(.route-branches .route-content h3, .restaurant-name, .area-guide-card h4) {
+  font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+}
+html[lang="en"] :is(.food-name, .sight-name, .seafood-card-name) {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+}
+html[lang="en"] :is(
+  .hero-intro, .section-intro, .area-guide-section .section-intro,
+  .route-intro, .route-content p, .route-content h3 span,
+  .food-description, .restaurant-notes, .sight-summary,
+  .info-body.sight-detail .sight-description, .detail-shop p, .detail-history p,
+  .area-fact p, .area-guide-card > p, .area-guide-subheading p,
+  .seafood-guide-heading p, .seafood-calendar-head p, .seafood-panel-intro,
+  .seafood-market-question, .seafood-card-body, .seafood-card-prep,
+  .souvenir-heading > p:last-child, .souvenir-card p, .souvenir-pairings dd, .souvenir-regional
+) { line-height: var(--english-leading); }
+html[lang="en"] #hero-sticker { text-align: center; }
+html[lang="en"] #hero-sticker strong { font-size: clamp(16px, 2vw, 27px); }
+html[lang="en"] .page-jump-controls > :is(a, button) { width: 56px; }
+
+@media (max-width: 760px) {
+  .site-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+  .site-header > nav { grid-column: 1 / -1; }
+  .site-header > .header-actions { max-width: none; }
+  .site-header .site-sync-trigger > span { display: none; }
+  .language-toggle { min-height: 44px; min-width: 44px; }
+  html[lang="en"] .hero h1 { font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  html[lang="en"] .hero-intro { margin-top: 16px; }
+}
+@media (max-width: 440px) {
+  .site-header .nav-plan [data-menu-label] { display: none; }
+}
