@@ -1,3 +1,28 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "restaurant-4d03996f-237a-4fae-bcbe-d39001c678e2",
+      "name": "海丰县新境泰酒家",
+      "region": "县城",
+      "dishes": "炸豆腐鱼、油炸鱼虾（咸菜类）、焖豆腐鱼",
+      "tags": "",
+      "address": "二环西路华夏广场对面文天祥公园左侧8号",
+      "hours": "饭点",
+      "notes": "家里人最常来吃的店。看起来跟普通大排档一样，但是新鲜好吃。",
+      "photoUrl": "assets/uploads/restaurant-xin-jing-tai.jpg",
+      "duration": 90
+    },
+    {
+      "id": "restaurant-82666507-792f-42e5-96a2-1fca0184ec72",
+      "name": "金华大酒店",
+      "region": "县城",
+      "dishes": "蒸螃蟹、蒸时令海鲜",
+      "tags": "海鲜酒楼",
+      "address": "广富路21号",
+      "hours": "06:30-14:00, 17:00-21:00",
+      "notes": "推荐去包间点菜。海鲜新鲜，出品稳定。\n美中不足：电梯要等很久，楼下1-3层是早茶，周末极多人。",
+      "photoUrl": "assets/uploads/restaurant-jinhua-hotel.jpg",
+      "duration": 90
+    }
+  ]
 }

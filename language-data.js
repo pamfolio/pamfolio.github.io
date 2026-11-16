@@ -1,6 +1,21 @@
 'use strict';
 
 window.HAIFENG_ENGLISH = {
+ "海丰肉蟹": "Haifeng crab",
+ "一口，就能让你爱上这座城。": "One bite and you’ll fall in love with this town.",
+ "新鲜的海鲜配上刚刚好的烹饪火候，清甜咸香在嘴里层层展开。": "Fresh seafood cooked just right, with layers of sweetness and savory flavor.",
+ "海丰县新境泰酒家": "Xin Jing Tai Restaurant, Haifeng",
+ "炸豆腐鱼、油炸鱼虾（咸菜类）、焖豆腐鱼": "Fried and braised Bombay duck, and fried fish and shrimp with preserved vegetables",
+ "二环西路华夏广场对面文天祥公园左侧8号": "No. 8, left of Wen Tianxiang Park, across from Huaxia Plaza on West Second Ring Road",
+ "饭点": "Mealtimes",
+ "家里人最常来吃的店。看起来跟普通大排档一样，但是新鲜好吃。": "Our family’s regular spot. It looks like a simple food stall, but the food is fresh and delicious.",
+ "金华大酒店": "Jinhua Hotel",
+ "蒸螃蟹、蒸时令海鲜": "Steamed crab and seasonal seafood",
+ "广富路21号": "21 Guangfu Road",
+ "推荐去包间点菜。海鲜新鲜，出品稳定。\n美中不足：电梯要等很久，楼下1-3层是早茶，周末极多人。": "Order à la carte in a private room for fresh, consistently good seafood.\nExpect a long elevator wait. The first three floors serve dim sum and get crowded on weekends.",
+ "肠粉": "Steamed rice rolls",
+ "刘杰肠粉": "Liu Jie Rice Rolls",
+ "城区园林东街117号附近": "Near 117 East Yuanlin Street, downtown",
  "家常饭店名单待补充。": "Restaurant recommendations are coming.",
  "选好饭店后，可以在「我的行程」里记下店名和位置。": "Once you’ve picked a restaurant, add its name and location to My itinerary.",
  "这会替换当前的{0}行程。想吃清单和其他天数的行程会保留。": "This replaces the selected {0} itinerary. Your food list and other itineraries will stay.",

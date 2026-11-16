@@ -177,7 +177,7 @@ content:
   format: json
   fields:
   - name: items
-    label: 饭店列表（原 ZIP 未包含饭店记录）
+    label: 饭店列表
     type: object
     fields:
     - name: id
@@ -210,6 +210,9 @@ content:
     - name: hours
       label: 营业时间
       type: string
+    - name: duration
+      label: 建议停留（分钟）
+      type: number
     list:
       collapsible:
         collapsed: true

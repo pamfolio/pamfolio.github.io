@@ -11,7 +11,7 @@
       ],
       "taste": "香甜 · 椰香",
       "tags": "椰奶 · 芋头 · 豆香",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "art": "椰香",
       "duration": 25,
       "desc": "椰香甜汤里，藏着芋头和豆子的绵软。",
@@ -21,7 +21,7 @@
       "hours": "",
       "notes": "",
       "source": "https://www.ttv.com.tw/cuisine/amp/Detail2.aspx?rid=1404",
-      "photoUrl": "",
+      "photoUrl": "assets/uploads/food-coconut-chacha.jpg",
       "image": ""
     },
     {
@@ -35,7 +35,7 @@
       ],
       "taste": "清甜 · 软糯",
       "tags": "传统甜汤 · 配料丰富",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "art": "五果",
       "duration": 25,
       "desc": "一碗清甜的糖水，慢慢舀起软糯配料。",
@@ -45,7 +45,7 @@
       "hours": "",
       "notes": "",
       "source": "https://m.guokr.com/article/461953",
-      "photoUrl": "",
+      "photoUrl": "assets/uploads/food-wuguotang.jpg",
       "image": ""
     },
     {
@@ -59,7 +59,7 @@
       ],
       "taste": "咸香 · 软滑",
       "tags": "米浆蒸制 · 早餐",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "art": "铜盘粿",
       "duration": 30,
       "desc": "铜盘蒸出一层米香，软滑鲜香的一口早餐。",
@@ -69,7 +69,7 @@
       "hours": "",
       "notes": "",
       "source": "https://travel.ifeng.com/c/7z21itHHX5U",
-      "photoUrl": "",
+      "photoUrl": "assets/uploads/food-tongpan.jpg",
       "image": ""
     },
     {
@@ -191,7 +191,7 @@
       "notes": "",
       "photoKind": "photo",
       "art": "狗毛膏／九",
-      "photoUrl": "assets/jelly.jpg"
+      "photoUrl": "assets/uploads/food-jelly.jpg"
     },
     {
       "id": "pancake",
@@ -240,7 +240,7 @@
       "notes": "",
       "photoKind": "photo",
       "art": "层糕粿（重",
-      "photoUrl": "assets/layer-cake.jpg"
+      "photoUrl": "assets/uploads/food-layercake.jpg"
     },
     {
       "id": "riceroll",
@@ -312,8 +312,8 @@
       "address": "",
       "notes": "",
       "image": "",
-      "photoKind": "missing",
-      "photoUrl": ""
+      "photoKind": "photo",
+      "photoUrl": "assets/uploads/food-triangle.jpg"
     },
     {
       "id": "bowlcake",
@@ -336,8 +336,8 @@
       "address": "",
       "notes": "",
       "image": "",
-      "photoKind": "missing",
-      "photoUrl": ""
+      "photoKind": "photo",
+      "photoUrl": "assets/uploads/food-bowlcake.jpg"
     },
     {
       "id": "eggwhite",
@@ -430,10 +430,10 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "鱼粥／海鲜",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-1-4.jpg"
     },
     {
       "id": "legacy-1-5",
@@ -503,10 +503,10 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "冬节鸽／冬",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-2-3.jpg"
     },
     {
       "id": "legacy-3-2",
@@ -550,11 +550,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "牛肠肚",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-3-3.jpg"
     },
     {
       "id": "legacy-3-4",
@@ -574,11 +574,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "马鲛鱼丸",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-3-4.jpg"
     },
     {
       "id": "legacy-3-5",
@@ -598,11 +598,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "扁食",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-3-5.jpg"
     },
     {
       "id": "legacy-3-6",
@@ -622,11 +622,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "牛肉丸",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-3-6.jpg"
     },
     {
       "id": "legacy-4-4",
@@ -695,11 +695,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "油麻糊",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-5-2.jpg"
     },
     {
       "id": "legacy-5-3",
@@ -719,11 +719,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "豆花",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-5-3.jpg"
     },
     {
       "id": "legacy-5-4",
@@ -743,11 +743,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "可塘西米露",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-5-4.jpg"
     },
     {
       "id": "legacy-5-5",
@@ -863,11 +863,11 @@
       "notes": "",
       "duration": 30,
       "image": "",
-      "photoKind": "missing",
+      "photoKind": "photo",
       "story": "",
       "art": "发粿",
       "source": "",
-      "photoUrl": ""
+      "photoUrl": "assets/uploads/food-legacy-6-3.jpg"
     },
     {
       "id": "legacy-6-4",
@@ -916,6 +916,30 @@
       "art": "油枝（番薯",
       "source": "",
       "photoUrl": ""
+    },
+    {
+      "id": "custom-63833020-98ed-4ae3-b2c4-cafc0aae22e7",
+      "name": "肠粉",
+      "region": "县城",
+      "origin": "自选美食",
+      "category": "传统粿点",
+      "tastes": [
+        "savory"
+      ],
+      "taste": "咸口",
+      "tags": "",
+      "photoKind": "photo",
+      "art": "肠粉",
+      "duration": 30,
+      "desc": "",
+      "story": "",
+      "shop": "刘杰肠粉",
+      "address": "城区园林东街117号附近",
+      "hours": "05:00-15:00",
+      "notes": "",
+      "source": "",
+      "photoUrl": "assets/uploads/food-liu-jie-rice-rolls.jpg",
+      "image": ""
     }
   ]
 }
