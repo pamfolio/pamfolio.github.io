@@ -1,0 +1,787 @@
+.seasonal-seafood,
+#seafood-guide-editor {
+  --seafood-sage: #e9ede3;
+  --seafood-cream: #fbf8ef;
+  --seafood-line: #d8ded1;
+  --seafood-leaf: #4d6148;
+  --seafood-ink: #4f5849;
+}
+
+.seasonal-seafood {
+  margin-top: 38px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 32px;
+}
+
+.seafood-guide-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.seafood-guide-heading > div {
+  min-width: 0;
+}
+
+.seafood-guide-heading h3 {
+  margin: 0;
+  font: 500 clamp(28px, 5vw, 36px)/1.4 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+#seafood-guide-intro {
+  margin: 10px 0 0;
+  color: var(--seafood-ink);
+  font-size: 14px;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.seafood-guide-heading > .button {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 9px 15px;
+  font-size: 12px;
+}
+
+.seafood-calendar {
+  min-width: 0;
+  scroll-margin-top: 32px;
+}
+
+.seafood-calendar-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 13px 22px;
+  margin-bottom: 15px;
+}
+
+.seafood-calendar-head > div {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.seafood-calendar h4 {
+  margin: 0;
+  color: var(--ink);
+  font: 500 clamp(21px, 3.8vw, 29px)/1.45 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+.seafood-calendar-head p,
+.seafood-panel-intro {
+  margin: 7px 0 0;
+  color: var(--seafood-ink);
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-month-picker {
+  display: grid;
+  gap: 5px;
+  color: var(--seafood-leaf);
+  font: 600 12px/1.4 var(--sans);
+}
+
+.seafood-month-picker select {
+  min-width: 124px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 8px;
+  background-color: var(--white);
+  color: var(--ink);
+  font: 600 16px/1.4 var(--sans);
+}
+
+.seafood-month-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.seafood-month-brief {
+  min-width: 0;
+  padding: clamp(14px, 3.8vw, 25px);
+  border: 1px solid #dedbcc;
+  border-radius: 13px;
+  background: var(--seafood-cream);
+}
+
+.seafood-month-brief > h5 {
+  margin: 0;
+  color: var(--ink);
+  font: 500 clamp(18px, 3.4vw, 23px)/1.5 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+.seafood-month-picks {
+  display: grid;
+  gap: 10px;
+  margin: 15px 0 0;
+}
+
+.seafood-editor-tabs {
+  display: grid;
+  gap: 6px;
+}
+
+.seafood-editor-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 4px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 7px;
+  background: var(--white);
+  color: var(--seafood-leaf);
+  font: 600 13px/1.4 var(--sans);
+  text-align: center;
+  cursor: pointer;
+}
+
+.seafood-editor-tabs button[aria-pressed="true"] {
+  border-color: var(--seafood-leaf);
+  background: var(--seafood-leaf);
+  color: var(--white);
+}
+
+[data-seafood-tier="priority"] {
+  --seafood-tier-paper: #eaf1e5;
+  --seafood-tier-line: #cfddc9;
+  --seafood-tier-ink: #455d44;
+}
+
+[data-seafood-tier="market"] {
+  --seafood-tier-paper: #f9f1dc;
+  --seafood-tier-line: #e7d9b3;
+  --seafood-tier-ink: #6c512f;
+}
+
+.seafood-pick-group {
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--seafood-tier-line);
+  border-radius: 9px;
+  background: var(--seafood-tier-paper);
+  color: var(--seafood-tier-ink);
+}
+
+.seafood-pick-group h5 {
+  margin: 0 0 7px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.seafood-pick-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.seafood-chip {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 36px;
+  padding: 5px 9px;
+  border: 1px solid var(--seafood-tier-line);
+  border-radius: 999px;
+  background: var(--white);
+  color: inherit;
+  font: 500 12px/1.5 var(--sans);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.seafood-menu {
+  margin: 16px 0 0;
+  padding: 13px 0 0;
+  border-top: 1px dashed #d8d1c0;
+}
+
+.seafood-menu h5 {
+  margin: 0 0 6px;
+  color: #82583d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.seafood-menu ul {
+  display: grid;
+  gap: 5px 24px;
+  margin: 0;
+  padding-left: 19px;
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.seafood-menu li {
+  overflow-wrap: anywhere;
+}
+
+.seafood-market-question {
+  display: grid;
+  gap: 4px;
+  margin: 12px 0 0;
+  padding: 9px 12px;
+  border-radius: 7px;
+  background: #f0ebdf;
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.seafood-market-question strong {
+  color: #82583d;
+}
+
+.seafood-market-question span {
+  white-space: pre-wrap;
+}
+
+.seafood-card-group {
+  margin-top: 22px;
+}
+
+.seafood-group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 7px 12px;
+  margin-bottom: 10px;
+}
+
+.seafood-group-head h5,
+.seafood-group-head h4,
+.seafood-card-group > h5 {
+  margin: 0;
+  color: var(--seafood-tier-ink);
+  font: 600 16px/1.5 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+.seafood-group-head p,
+.seafood-group-head span,
+.seafood-card-group > p {
+  margin: 0;
+  color: var(--seafood-ink);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.seafood-guide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.seafood-guide-card {
+  min-width: 0;
+  border: 1px solid var(--seafood-tier-line);
+  border-radius: 10px;
+  background: var(--seafood-tier-paper);
+  scroll-margin-top: 32px;
+}
+
+.seafood-card-summary {
+  display: block;
+  min-width: 0;
+  padding: 13px 15px 12px;
+  list-style: none;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.seafood-card-summary::-webkit-details-marker {
+  display: none;
+}
+
+.seafood-card-summary::marker {
+  content: "";
+}
+
+.seafood-card-art {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: 52px;
+  margin-bottom: 6px;
+  color: #6e8463;
+}
+
+.seafood-card-art svg,
+.seafood-card-art .seafood-art-image,
+.seafood-card-art img {
+  display: block;
+  width: 66px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.seafood-card-art > span {
+  align-self: flex-start;
+  color: #69795e;
+  font: italic 33px/1 Georgia, serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.seafood-card-tag {
+  display: block;
+  color: var(--seafood-leaf);
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-card-summary h5,
+.seafood-card-summary h4,
+.seafood-card-name {
+  display: block;
+  margin: 4px 0 6px;
+  font: 500 20px/1.45 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+.seafood-card-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--seafood-leaf);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.seafood-card-toggle svg {
+  width: 14px;
+  height: 14px;
+}
+
+.seafood-guide-card[open] .seafood-card-toggle svg {
+  transform: rotate(180deg);
+}
+
+.seafood-card-content {
+  min-width: 0;
+  padding: 12px 15px 15px;
+  border-top: 1px solid var(--seafood-tier-line);
+}
+
+.seafood-card-verse {
+  margin: 0 0 7px;
+  color: #865c42;
+  font: 500 15px/1.6 var(--serif);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-card-body {
+  margin: 0;
+  color: var(--seafood-ink);
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-card-prep {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--seafood-tier-line);
+  color: #795839;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-card-prep svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.seafood-card-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 2px 0;
+  color: var(--rust-dark);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.seafood-card-edit svg {
+  width: 15px;
+  height: 15px;
+}
+
+.seafood-guide-foot {
+  margin-top: 20px;
+  max-width: 760px;
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-sources {
+  margin-top: 24px;
+  padding: 0 13px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 8px;
+  background: #f1f2e9;
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.seafood-sources summary {
+  min-height: 44px;
+  padding: 11px 0;
+  color: var(--seafood-leaf);
+  font-weight: 650;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.seafood-sources p {
+  margin: 0 0 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.seafood-sources ol,
+.seafood-sources ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.seafood-sources li + li {
+  margin-top: 6px;
+}
+
+.seafood-sources a {
+  color: var(--rust-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.seasonal-seafood :is(button, a, summary, select):focus-visible,
+#seafood-guide-editor :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid var(--rust-dark);
+  outline-offset: 2px;
+}
+
+#seafood-guide-editor {
+  --seafood-editor-pad: 16px;
+  width: min(720px, calc(100vw - 22px));
+  max-height: min(90dvh, calc(100dvh - 18px));
+  padding: var(--seafood-editor-pad);
+  overscroll-behavior: contain;
+}
+
+#seafood-guide-editor .dialog-head h2 {
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+#seafood-guide-editor .dialog-head .icon-button {
+  width: 44px;
+  height: 44px;
+}
+
+.seafood-editor-tabs {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 8px 0 15px;
+}
+
+.seafood-editor-panel,
+.seafood-editor-fields {
+  min-width: 0;
+}
+
+.seafood-editor-panel h3,
+.seafood-editor-panel h4,
+.seafood-editor-panel h5 {
+  margin: 16px 0 5px;
+  font: 600 16px/1.5 var(--serif);
+}
+
+#seafood-guide-form fieldset {
+  min-width: 0;
+  margin: 15px 0 0;
+  padding: 3px 12px 13px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 8px;
+}
+
+#seafood-guide-form .seafood-editor-controls {
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#seafood-guide-form .field-grid {
+  display: grid;
+  min-width: 0;
+  gap: 0 12px;
+}
+
+#seafood-guide-form legend {
+  padding: 0 5px;
+  color: var(--seafood-leaf);
+  font: 500 15px/1.5 var(--serif);
+  overflow-wrap: anywhere;
+}
+
+#seafood-guide-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  margin-top: 12px;
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#seafood-guide-form :is(input, textarea, select):not([type="file"]) {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 9px 10px;
+  border: 1px solid #cdd5c4;
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--ink);
+  font: 400 16px/1.5 var(--sans);
+}
+
+#seafood-guide-form textarea {
+  resize: vertical;
+}
+
+#seafood-guide-form input[type="file"] {
+  max-width: 100%;
+  min-height: 44px;
+  font-size: 13px;
+  white-space: normal;
+}
+
+.seafood-editor-list {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.seafood-editor-order-row,
+.seafood-editor-add {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 0;
+}
+
+.seafood-editor-order-row {
+  padding: 5px 7px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--seafood-ink);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.seafood-editor-order-row > span {
+  flex: 1 1 95px;
+  overflow-wrap: anywhere;
+}
+
+.seafood-editor-order-row button,
+.seafood-editor-add button,
+.seafood-editor-photo button,
+.seafood-editor-source button {
+  min-height: 44px;
+  padding: 6px 9px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 6px;
+  color: var(--seafood-leaf);
+  font-size: 12px;
+}
+
+.seafood-editor-order-row button {
+  min-width: 44px;
+}
+
+.seafood-editor-order-row button:disabled {
+  opacity: .4;
+  cursor: default;
+}
+
+.seafood-editor-add {
+  margin-top: 8px;
+}
+
+.seafood-editor-add > label,
+.seafood-editor-add > select {
+  flex: 1 1 120px;
+  width: auto;
+  margin-top: 0;
+}
+
+.seafood-editor-photo,
+.seafood-editor-source {
+  min-width: 0;
+  margin-top: 13px;
+  padding: 10px;
+  border: 1px solid var(--seafood-line);
+  border-radius: 8px;
+  background: #f0f2e8;
+}
+
+.seafood-art-preview {
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+  margin: 8px 0;
+  border: 1px solid var(--seafood-line);
+  border-radius: 8px;
+  background: var(--white);
+  color: #6e8463;
+}
+
+.seafood-art-preview svg,
+.seafood-art-preview img {
+  width: 92px;
+  height: 86px;
+  object-fit: contain;
+}
+
+.seafood-editor-help {
+  margin: 9px 0 0;
+  color: var(--seafood-ink);
+  font-size: 12px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.seafood-editor-status:empty {
+  display: none;
+}
+
+.seafood-editor-actions {
+  position: sticky;
+  z-index: 1;
+  bottom: calc(-1 * var(--seafood-editor-pad));
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 0 max(10px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.seafood-editor-actions .button {
+  min-height: 44px;
+  padding: 9px 13px;
+  font-size: 13px;
+}
+
+.seafood-editor-actions .primary {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .seasonal-seafood {
+    margin-top: 48px;
+    padding-top: 40px;
+  }
+
+  .seafood-guide-heading {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 22px;
+  }
+
+  .seafood-month-picks,
+  .seafood-menu ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seafood-guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .seafood-card-summary {
+    padding: 15px 17px 13px;
+  }
+
+  .seafood-card-art svg,
+  .seafood-card-art .seafood-art-image,
+  .seafood-card-art img {
+    width: 84px;
+    height: 68px;
+  }
+
+  .seafood-card-content {
+    padding: 13px 17px 17px;
+  }
+
+  #seafood-guide-editor {
+    --seafood-editor-pad: 24px;
+  }
+
+  .seafood-editor-tabs {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #seafood-guide-form .field-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seafood-editor-actions .primary {
+    flex: 0 1 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .seafood-guide-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

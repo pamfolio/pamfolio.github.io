@@ -1,0 +1,535 @@
+media:
+  input: assets/uploads
+  output: assets/uploads
+settings:
+  content:
+    merge: true
+content:
+- name: home
+  label: 首页文案与照片
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: title
+    label: 标题
+    type: string
+  - name: description
+    label: 详细介绍
+    type: text
+  - name: hero
+    label: 首页文字
+    type: object
+    fields:
+    - name: location
+      label: 地点标注
+      type: string
+    - name: titleFirst
+      label: 主标题第一行
+      type: string
+    - name: titleSecond
+      label: 主标题第二行
+      type: string
+    - name: intro
+      label: 简介
+      type: text
+    - name: foodLink
+      label: 美食按钮文案
+      type: string
+    - name: routeLink
+      label: 路线按钮文案
+      type: string
+    - name: foodNote
+      label: 美食提示
+      type: string
+    - name: paceNote
+      label: 节奏提示
+      type: string
+    - name: stickerTop
+      label: 圆贴上方文字
+      type: string
+    - name: stickerTitle
+      label: 圆贴标题
+      type: string
+    - name: stickerEnglish
+      label: 圆贴英文
+      type: string
+    - name: stripTitle
+      label: 下方条幅标题
+      type: string
+    - name: stripText
+      label: 下方条幅说明
+      type: text
+  - name: mainCaption
+    label: 主图标题
+    type: string
+  - name: mainSubtitle
+    label: 主图说明
+    type: string
+  - name: smallCaption
+    label: 小图标题
+    type: string
+  - name: mainImage
+    label: 首页主图
+    type: image
+  - name: mainImageAlt
+    label: 主图替代文字
+    type: string
+  - name: smallImage
+    label: 首页小图
+    type: image
+  - name: smallImageAlt
+    label: 小图替代文字
+    type: string
+- name: foods
+  label: 美食、小店与排序
+  type: file
+  path: content/foods.json
+  format: json
+  fields:
+  - name: items
+    label: 美食列表（拖动调整展示顺序）
+    type: object
+    fields:
+    - name: id
+      label: 唯一编号（已有编号不要改）
+      type: string
+      required: true
+      pattern: ^[a-zA-Z0-9_-]+$
+      description: 新增条目请使用不重复的英文或数字编号，例如 food-new-01；已有编号请保留，避免影响收藏与路线。
+    - name: name
+      label: 名称
+      type: string
+    - name: region
+      label: 片区
+      type: string
+    - name: origin
+      label: 地域特色
+      type: string
+    - name: category
+      label: 分类
+      type: string
+    - name: tastes
+      label: 口味筛选标签
+      type: string
+      description: 保留 savory（咸口）、sweet（甜口）、tea（茶香）这些英文标签；它们用于访客筛选。
+      list: true
+    - name: taste
+      label: 口味描述
+      type: string
+    - name: tags
+      label: 标签说明
+      type: string
+    - name: photoKind
+      label: 图片类型
+      type: string
+    - name: art
+      label: 没有照片时的文字
+      type: string
+    - name: duration
+      label: 建议停留（分钟）
+      type: number
+    - name: desc
+      label: 卡片简介
+      type: text
+    - name: story
+      label: 详细介绍
+      type: text
+    - name: shop
+      label: 推荐小店
+      type: string
+    - name: address
+      label: 地址
+      type: string
+    - name: hours
+      label: 营业时间
+      type: string
+    - name: notes
+      label: 补充说明
+      type: text
+    - name: source
+      label: 资料来源链接
+      type: string
+    - name: photoUrl
+      label: 照片
+      type: image
+    - name: image
+      label: 保留的旧图片字段
+      type: image
+      hidden: true
+      readonly: true
+    - name: legacySlide
+      label: 旧版关联编号
+      type: number
+      readonly: true
+    - name: composite
+      label: 旧版组合标识
+      type: boolean
+      readonly: true
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+- name: restaurants
+  label: 家里人常去的饭店
+  type: file
+  path: content/restaurants.json
+  format: json
+  fields:
+  - name: items
+    label: 饭店列表（原 ZIP 未包含饭店记录）
+    type: object
+    fields:
+    - name: id
+      label: 唯一编号（已有编号不要改）
+      type: string
+      required: true
+      pattern: ^restaurant-[a-z0-9-]{8,80}$
+      description: 新增饭店可使用 restaurant-haifeng-01，后续不要修改这个编号。
+    - name: name
+      label: 名称
+      type: string
+    - name: region
+      label: 片区
+      type: string
+    - name: photoUrl
+      label: 照片
+      type: image
+    - name: tags
+      label: 标签说明
+      type: string
+    - name: dishes
+      label: 推荐菜
+      type: string
+    - name: notes
+      label: 补充说明
+      type: text
+    - name: address
+      label: 地址
+      type: string
+    - name: hours
+      label: 营业时间
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+- name: sights
+  label: 景点与酒店出发点
+  type: file
+  path: content/sights.json
+  format: json
+  fields:
+  - name: hotel
+    label: 酒店出发点
+    type: object
+    fields:
+    - name: name
+      label: 名称
+      type: string
+    - name: address
+      label: 地址
+      type: string
+    - name: sourceUrl
+      label: 资料来源链接
+      type: string
+  - name: sights
+    label: 景点列表
+    type: object
+    fields:
+    - name: id
+      label: 唯一编号（已有编号不要改）
+      type: string
+      required: true
+      pattern: ^[a-zA-Z0-9_-]+$
+      description: 新增条目请使用不重复的英文或数字编号，例如 food-new-01；已有编号请保留，避免影响收藏与路线。
+    - name: name
+      label: 名称
+      type: string
+    - name: area
+      label: 所在区域说明
+      type: string
+    - name: region
+      label: 片区
+      type: string
+    - name: group
+      label: 区域分组
+      type: string
+      description: 沿用原数据分组：haifeng / nanao / shanwei。它用于前台筛选。
+    - name: categories
+      label: 景点分类
+      type: string
+      list: true
+    - name: summary
+      label: 卡片简介
+      type: text
+    - name: description
+      label: 详细介绍
+      type: text
+    - name: highlights
+      label: 看点
+      type: string
+      list: true
+    - name: address
+      label: 地址
+      type: string
+    - name: mapQuery
+      label: 地图搜索名称
+      type: string
+    - name: mapCity
+      label: 地图城市
+      type: string
+    - name: duration
+      label: 建议停留（分钟）
+      type: number
+    - name: visitMinutes
+      label: 建议游览时长范围（分钟：最小、最大）
+      type: number
+      list: true
+    - name: distanceKm
+      label: 距酒店距离范围（公里：最小、最大）
+      type: number
+      list: true
+    - name: driveMinutes
+      label: 驾车时间范围（分钟：最小、最大）
+      type: number
+      list: true
+    - name: routeLabels
+      label: 关联路线
+      type: string
+      list: true
+    - name: sources
+      label: 资料来源
+      type: object
+      fields:
+      - name: label
+        label: 说明
+        type: string
+      - name: url
+        label: 链接
+        type: string
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{index}'
+    - name: image
+      label: 照片
+      type: image
+    - name: imageAlt
+      label: 图片替代文字
+      type: string
+    - name: distanceBasis
+      label: 距离估算说明
+      type: text
+    - name: photoCredit
+      label: 照片署名
+      type: string
+    - name: distanceTargetLabel
+      label: 距离目的地说明
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+- name: seafood
+  label: 海鲜卡片与月份日历
+  type: file
+  path: content/seafood.json
+  format: json
+  fields:
+  - name: cards
+    label: 海鲜介绍卡片
+    type: object
+    fields:
+    - name: id
+      label: 唯一编号（已有编号不要改）
+      type: string
+      required: true
+      pattern: ^[a-zA-Z0-9_-]+$
+      description: 新增条目请使用不重复的英文或数字编号，例如 food-new-01；已有编号请保留，避免影响收藏与路线。
+    - name: art
+      label: 没有照片时的文字
+      type: string
+    - name: name
+      label: 名称
+      type: string
+    - name: tag
+      label: 标签
+      type: string
+    - name: verse
+      label: 小标题
+      type: string
+    - name: body
+      label: 介绍
+      type: text
+    - name: prep
+      label: prep
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+  - name: months
+    label: 月份日历
+    type: object
+    fields:
+    - name: season
+      label: season
+      type: string
+    - name: label
+      label: 说明
+      type: string
+    - name: intro
+      label: 简介
+      type: text
+    - name: priority
+      label: priority
+      type: string
+      list: true
+    - name: market
+      label: market
+      type: string
+      list: true
+    - name: menu
+      label: menu
+      type: string
+    - name: question
+      label: question
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{index}'
+  - name: sources
+    label: 资料来源
+    type: object
+    fields:
+    - name: label
+      label: 说明
+      type: string
+    - name: url
+      label: 链接
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{index}'
+  - name: sourceNote
+    label: 时令说明
+    type: text
+- name: area
+  label: 认识海丰：片区介绍
+  type: file
+  path: content/area.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: 英文栏目名
+    type: string
+  - name: heading
+    label: 标题
+    type: string
+  - name: intro
+    label: 简介
+    type: text
+  - name: geographyHeading
+    label: geographyHeading
+    type: string
+  - name: facts
+    label: 地区关系介绍
+    type: object
+    fields:
+    - name: title
+      label: 标题
+      type: string
+    - name: body
+      label: 介绍
+      type: text
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+  - name: areaHeading
+    label: areaHeading
+    type: string
+  - name: areaIntro
+    label: areaIntro
+    type: string
+  - name: mapEyebrow
+    label: mapEyebrow
+    type: string
+  - name: mapHeading
+    label: mapHeading
+    type: string
+  - name: mapCaption
+    label: mapCaption
+    type: string
+  - name: mapNorth
+    label: mapNorth
+    type: string
+  - name: mapSea
+    label: mapSea
+    type: string
+  - name: mapCounty
+    label: mapCounty
+    type: string
+  - name: mapLotus
+    label: mapLotus
+    type: string
+  - name: mapFair
+    label: mapFair
+    type: string
+  - name: mapKetang
+    label: mapKetang
+    type: string
+  - name: mapMeilong
+    label: mapMeilong
+    type: string
+  - name: mapTaohe
+    label: mapTaohe
+    type: string
+  - name: mapDahu
+    label: mapDahu
+    type: string
+  - name: areas
+    label: 片区介绍
+    type: object
+    fields:
+    - name: name
+      label: 名称
+      type: string
+    - name: tag
+      label: 标签
+      type: string
+    - name: body
+      label: 介绍
+      type: text
+    - name: taste
+      label: 口味描述
+      type: string
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{name}'
+  - name: closing
+    label: 结尾文案
+    type: text
+- name: history
+  label: 进阶：小吃历史资料
+  type: file
+  path: content/food-history.json
+  format: json
+- name: nutrition
+  label: 进阶：营养估算数据
+  type: file
+  path: content/nutrition.json
+  format: json
+actions:
+- name: publish-site
+  label: 确认发布网站
+  workflow: publish.yml
+  ref: main
+  confirm:
+    title: 确认更新公开网站？
+    message: 这会发布 main 分支最新内容。保存内容会写入公开仓库，但只有执行本操作后正式网页才更新。请先确认所有内容适合公开。
+    button: 确认发布

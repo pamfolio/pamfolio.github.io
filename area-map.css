@@ -1,0 +1,23 @@
+.area-guide-places{display:grid;grid-template-columns:minmax(0,1fr) 275px;gap:26px;align-items:start}
+.area-guide-places .area-guide-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.area-guide-places .area-guide-card-first{grid-column:span 3}
+.area-map{align-self:start;position:sticky;top:25px;padding:23px 20px 20px;border:1px solid #d7ddc9;border-radius:10px;background:#eef0e5;min-width:0;box-shadow:0 4px 20px #35412f04}
+.area-map-eyebrow{font-size:9px;letter-spacing:3px;color:#a17b5e;margin-bottom:10px;overflow-wrap:anywhere}
+.area-map>h4{font:500 20px/1.7 var(--serif);color:#5b6d4e;overflow-wrap:anywhere}
+.area-map-drawing{display:block;width:100%;height:auto;max-height:405px;margin:13px auto 12px;overflow:visible;stroke:none}
+.area-map-land{fill:#e4e9d9;stroke:none}.area-map-water{fill:#dde6db}
+.area-map-lines{fill:none;stroke:#9ba889;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.area-map-lines .area-map-river{stroke:#b1c2ae;stroke-width:3}
+.area-map-lines .area-map-coast{stroke:#98af9e}
+.area-map-point circle{fill:#94a27c;stroke:#f4f5e9;stroke-width:2.5}
+.area-map-point text{fill:#6f7e5b;font-family:var(--serif);font-size:14px}
+.area-map-county circle{fill:#b76847;stroke:#fffdf0;stroke-width:3}
+.area-map-county .area-map-county-ring{fill:none;stroke:#c29470;stroke-width:1;stroke-dasharray:2 3}
+.area-map-county text{fill:#9d6246;font-size:16px}
+.area-map-direction,.area-map-sea-label{fill:#8b9b7d;font-family:var(--sans);font-size:11px;letter-spacing:2px}
+.area-map-sea-label{fill:#839c8a;font-size:12px}
+.area-map-caption{font-size:11px;line-height:2;color:#89947b;white-space:pre-wrap;overflow-wrap:anywhere;border-top:1px solid #d8decd;padding-top:13px}
+@media(max-width:1180px) and (min-width:901px){.area-guide-places{grid-template-columns:minmax(0,1fr) 250px;gap:22px}.area-guide-places .area-guide-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.area-guide-places .area-guide-card-first{grid-column:span 2}.area-map{padding:21px 16px}}
+@media(max-width:900px){.area-guide-places{display:flex;flex-direction:column;gap:24px}.area-map{position:static;order:-1;width:100%;padding:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,310px);column-gap:24px;align-items:start}.area-map-eyebrow{grid-column:1;grid-row:1;align-self:end}.area-map>h4{grid-column:1;grid-row:2;font-size:24px}.area-map-caption{grid-column:1;grid-row:3;margin-top:14px}.area-map-drawing{grid-column:2;grid-row:1 / 4;margin:0;max-height:370px}.area-guide-places .area-guide-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}.area-guide-places .area-guide-card-first{grid-column:span 2}}
+@media(max-width:540px){.area-map{display:block;padding:22px 24px}.area-map>h4{font-size:22px}.area-map-drawing{width:min(100%,275px);margin:12px auto;max-height:none}.area-guide-places .area-guide-grid{grid-template-columns:1fr}.area-guide-places .area-guide-card-first{grid-column:auto}}
+@media print{.area-map{position:static;break-inside:avoid}.area-map-drawing{max-height:350px}}

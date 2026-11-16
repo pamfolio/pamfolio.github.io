@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="广东海丰周末慢游 ｜ 美食、景点及历史">
+  <title>广东海丰周末慢游 ｜ 美食、景点及历史</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="page-jump.css?v=2">
+  
+  <link rel="stylesheet" href="seasonal-seafood.css">
+  <link rel="stylesheet" href="nav-sections.css?v=2">
+  <link rel="stylesheet" href="hero-copy.css">
+  <link rel="stylesheet" href="area-map.css">
+  <link rel="stylesheet" href="souvenirs.css">
+  <link rel="stylesheet" href="language.css?v=3">
+  <link rel="stylesheet" href="tasted-log.css?v=2">
+  <script defer src="legacy-data.js?v=2"></script>
+  <script defer src="nutrition-data.js"></script>
+  <script defer src="nutrition.js"></script>
+  <script defer src="history-data.js"></script>
+  
+  
+  
+  
+  
+  <script defer src="catalog.js?v=6"></script>
+  <script defer src="restaurants.js"></script>
+  
+  
+  
+  
+  <script defer src="area-guide.js?v=2"></script>
+  <script defer src="seafood-calendar-data.js"></script>
+  <script defer src="seafood-line-art.js"></script>
+  <script defer src="seasonal-seafood.js"></script>
+  
+  <script defer src="route-geo.js"></script>
+  <script defer src="route-order.js"></script>
+  <script defer src="route-order-ui.js"></script>
+  <script defer src="sights-data.js"></script>
+  
+  
+  <script defer src="language-data.js?v=5"></script>
+  <script defer src="language.js?v=2"></script>
+  
+  <script defer src="tasted-postcard.js"></script>
+  <script defer src="tasted-log.js"></script>
+  <script defer src="app.js?v=6"></script>
+  
+  <script defer src="sights.js"></script>
+  <script defer src="page-jump.js"></script>
+</head>
+<body id="page-top">
+  <a class="skip-link" href="#food">跳到美食图鉴</a>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="海丰慢慢吃首页"><span class="brand-mark">海<br>丰</span><span><strong>海丰慢慢吃</strong><small>HAIFENG, TAKE YOUR TIME</small></span></a>
+    <nav aria-label="主导航">
+      <a href="#food" data-menu-label="sectionFood">海丰美食</a>
+      <a href="#routes" data-menu-label="sectionRoutes">路线与景点</a>
+      <a href="#areas" data-menu-label="sectionAreas">认识海丰</a>
+      <a href="#your-journey" data-menu-label="sectionJourney">专属旅程</a>
+    </nav>
+    <div class="header-actions"><a href="#planner" class="nav-plan" aria-label="我的行程"><span data-icon="calendar"></span><span data-menu-label="planner">我的行程</span><span id="nav-count" class="count">0</span></a><button id="language-toggle" class="language-toggle" type="button" data-language-control hidden>EN</button></div>
+  </header>
+  
+  <main>
+    <section id="home" class="hero wrap">
+      <div class="hero-copy">
+        <p id="hero-location" class="eyebrow"><span class="little-line" aria-hidden="true"></span><span data-hero-copy="location">广东 · 汕尾 · 海丰</span></p>
+        <h1 id="hero-title"><b data-hero-copy="titleFirst">把海丰，</b><br id="hero-title-break"><span data-hero-copy="titleSecond">慢慢吃一遍。</span></h1>
+        <p id="hero-intro" class="hero-intro" data-hero-copy="intro">一笼小米，一碗菜茶，一段不赶的时光。
+跟着胃口去旅行，把喜欢的味道排进周末。</p>
+        <div class="hero-actions" id="hero-actions"><a href="#food" id="hero-food-link" class="button primary"><span data-hero-copy="foodLink">挑选想吃的</span><span data-icon="arrow"></span></a><a href="#routes" id="hero-route-link" class="text-link"><span data-hero-copy="routeLink">看看三种旅行</span><span data-icon="arrow"></span></a></div>
+        <div class="hero-foot" id="hero-foot"><span id="hero-foot-food"><span data-icon="heart"></span><span data-hero-copy="foodNote">按口味挑选</span></span><i id="hero-foot-divider" aria-hidden="true"></i><span id="hero-foot-pace"><span data-icon="clock"></span><span data-hero-copy="paceNote">按自己的节奏</span></span></div>
+        
+      </div>
+      <div class="hero-art">
+        <div class="hero-photo"><img id="hero-main-image" src="assets/hero-xiaomi.jpg" alt="海丰小米在蒸盘里排列整齐，番薯粉皮晶莹透亮" fetchpriority="high"><div class="photo-shade"></div><span id="hero-main-label" class="photo-label"><span id="hero-main-caption">海丰小米</span><small id="hero-main-subtitle">一口，是认识一座城的开始。</small></span></div>
+        <div class="round-note" id="hero-sticker"><div data-hero-copy="stickerTop">来海丰</div><strong data-hero-copy="stickerTitle">留个胃</strong><span data-hero-copy="stickerEnglish">FOR GOOD FOOD</span></div>
+        <div class="polaroid"><img id="hero-small-image" src="assets/vegetable-tea.jpg" alt="菜茶，蔬菜与炒米的丰盛搭配"><div id="hero-small-label"><span id="hero-small-caption">再来一碗，热热闹闹的菜茶。</span><span class="polaroid-arrow">↗</span></div></div>
+        <svg class="hero-doodle" viewBox="0 0 140 90" aria-hidden="true"><path d="M8 15c60-20 90 50 52 56-30 5-18-31 12-26 24 4 35 24 46 26m-10-17 12 19-23 2"/></svg>
+      </div>
+    </section>
+    <div class="intro-strip" id="hero-strip"><div class="wrap"><span data-hero-copy="stripTitle">山海之间，烟火日常。</span><p data-hero-copy="stripText">不用每站都打卡，吃到喜欢的，就很好。</p><span class="strip-icon" data-icon="bowl"></span></div></div>
+
+    <section id="food" class="food-section wrap section">
+      <div class="section-heading"><div><p class="eyebrow">01 / A TASTE OF HAIFENG</p><h2>先挑好吃的，再慢慢出发。</h2><p class="section-intro">咸香、清甜、热腾腾。把想尝的味道，收进自己的清单。</p></div></div>
+      <div class="food-section-nav-row"><nav class="food-section-nav" aria-label="选择吃点什么"><a href="#food-toolbar" data-menu-label="foodSnacks">小吃与甜品</a><a href="#restaurants" data-menu-label="foodRestaurants">家里人常去的饭店 · 大菜 ↘</a><a href="#seasonal-seafood" data-menu-label="seafood">当季海鲜 ↘</a></nav></div>
+      
+      <section id="food-toolbar" class="food-snacks-section" aria-labelledby="food-snacks-heading">
+        <div class="food-snacks-heading food-subsection-heading"><p class="eyebrow">LOCAL FLAVOURS</p><h3 id="food-snacks-heading">小吃与甜品</h3></div>
+        <div class="food-toolbar"><div class="taste-tabs" role="group" aria-label="按口味筛选"><button class="active" data-taste="all" aria-pressed="true">全部味道</button><button data-taste="savory" aria-pressed="false">咸香一口</button><button data-taste="sweet" aria-pressed="false">甜蜜收尾</button><button data-taste="tea" aria-pressed="false">喝茶慢聊</button></div><div class="filter-tools"><label class="search"><span data-icon="search"></span><input id="food-search" type="search" placeholder="搜美食、片区…" aria-label="搜索美食或片区"></label><select id="region-filter" aria-label="按片区筛选"><option value="all">所有片区</option><option value="县城">海丰县城</option><option value="梅陇">梅陇</option><option value="公平">公平</option></select><select id="category-filter" aria-label="按美食类别筛选"><option value="all">所有类别</option><option>粉面主食</option><option>传统粿点</option><option>肉类海鲜</option><option>茶汤综合</option><option>甜品糖水</option><option>糕饼手信</option></select></div></div>
+        <div class="result-line"><span id="food-count"></span><span>点击「想吃」，再到行程里安排时间。</span><a id="tasted-shortcut" class="tasted-shortcut" href="#tasted-log" hidden>去看吃过手记 ↘</a></div>
+        
+        <div id="food-grid" class="food-grid"></div><div id="food-empty" class="empty-state" hidden>暂时没找到这口味道。试试换个关键词，或查看全部片区。</div>
+        <div class="food-bottom"><button id="more-food" class="button outline">再看看其他味道<span data-icon="down"></span></button></div>
+      </section>
+      <section id="restaurants" class="restaurants-section" aria-labelledby="restaurants-heading">
+        <div class="restaurants-heading food-subsection-heading"><div><p class="eyebrow">A TABLE FOR EVERYONE</p><h3 id="restaurants-heading">家里人常去的饭店</h3><p>海鲜、蟹和热腾腾的大菜，一家人坐下来好好吃一顿。</p></div></div>
+        <div class="restaurant-categories"><span>海鲜酒楼</span><span>蟹与时令海鲜</span><span>家常聚餐</span><small id="restaurant-count" aria-live="polite"></small></div>
+        <div id="restaurant-grid" class="restaurant-grid"></div>
+        <div id="restaurant-empty" class="restaurant-empty"><div class="restaurant-table-mark" aria-hidden="true"><span data-icon="bowl"></span></div><div><span class="eyebrow">THE FAMILY'S FAVOURITES</span><h4>家常饭店名单待补充。</h4><p>选好饭店后，可以在「我的行程」里记下店名和位置。</p></div><span class="restaurant-empty-note">小吃慢慢尝<br>大菜围桌吃</span></div>
+      </section>
+      <section id="seasonal-seafood" class="seasonal-seafood" aria-labelledby="seafood-guide-heading">
+        <div class="seafood-guide-heading">
+          <div><p id="seafood-guide-eyebrow" class="eyebrow"></p><h3 id="seafood-guide-heading">把海风端上餐桌</h3><p id="seafood-guide-intro"></p></div>
+          
+        </div>
+        <section id="seafood-calendar" class="seafood-calendar" aria-labelledby="seafood-guide-calendarHeading">
+          <div class="seafood-calendar-head">
+            <div><h4 id="seafood-guide-calendarHeading">海丰全年海鲜月历</h4><p id="seafood-guide-calendarIntro"></p></div>
+            <label class="seafood-month-picker">选择公历月份<select id="seafood-month-select" aria-controls="seafood-month-panel"></select></label>
+          </div>
+          <p class="seafood-month-status" id="seafood-month-status" role="status"></p>
+          <div id="seafood-month-panel" class="seafood-month-panel"></div>
+        </section>
+        <p class="seafood-guide-foot" id="seafood-guide-closing" hidden></p>
+        <details id="seafood-guide-sources" class="seafood-sources">
+          <summary><span id="seafood-guide-sourceHeading"></span></summary>
+          <div><p id="seafood-guide-sourceNote"></p><ol id="seafood-source-links"></ol></div>
+        </details>
+      </section>
+    </section>
+
+    <section id="routes" class="routes-section section"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / A WEEKEND, YOUR WAY</p><h2>三种走法，跟着胃口选。</h2></div><p class="route-intro">留在海丰慢慢吃，或多走一段海岸线。<br>从原来的旅行攻略出发，把每一天改成自己的节奏。</p></div>
+      <div class="food-section-nav-row">
+        <nav class="food-section-nav" aria-label="路线区跳转目录">
+          <a href="#recommended-routes">三种推荐路线</a>
+          <a href="#sights">景点图鉴</a>
+        </nav>
+      </div>
+      <div id="recommended-routes" class="route-grid route-branches">
+        <article class="route-card route-a">
+          <div class="route-image"><img src="assets/legacy/lotus-mountain.png" alt="海丰莲花山" loading="lazy"><span class="route-number">A</span><span class="route-duration">2 DAYS / 1 NIGHT</span></div>
+          <div class="route-content"><span class="tag sage">海丰 · 两天一夜</span><h3>海丰慢慢逛<span>老城烟火，山里慢走</span></h3><p>DAY 1　县城小吃 · 红宫红场 · 老街<br>DAY 2　莲花山 · 鸡鸣寺 · 午后返程</p><button data-use-route="2" data-variant="haifeng" class="route-use">用 A 方案开始<span data-icon="arrow"></span></button></div>
+        </article>
+        <article class="route-card route-b">
+          <div class="route-image"><img src="assets/legacy/shanwei-jinding-bay.png" alt="汕尾金町湾海岸" loading="lazy"><span class="route-number">B</span><span class="route-duration">3 DAYS / 2 NIGHTS</span></div>
+          <div class="route-content"><span class="tag sage">海丰出发 · 三天两夜</span><h3>多留一天，山海任选<span>前两天慢游海丰，第三天选喜欢的方向</span></h3><p class="route-shared-days">DAY 1　老城人文 · 小店寻味<br>DAY 2　莲花山 · 鸡鸣寺 · 村落慢游</p>
+            <fieldset class="route-options"><legend>第 3 天，想怎么过？</legend>
+              <label class="route-choice"><input type="radio" name="b-route" value="dahu"><span><strong>留在海丰 · 大湖滨海</strong><small>高螺 · 古渔港 · 午后回县城返程</small></span></label>
+              <label class="route-choice"><input type="radio" name="b-route" value="shanwei" checked><span><strong>汕尾市区＋红海湾</strong><small>金町湾 · 二马路 · 遮浪看海与咖啡</small></span></label>
+              <label class="route-choice"><input type="radio" name="b-route" value="shanwei-city"><span><strong>汕尾市区 · 轻松逛吃</strong><small>金町湾 · 二马路，下午留给返程</small></span></label>
+            </fieldset>
+            <p class="route-selection-summary" id="b-route-summary" aria-live="polite">已选：汕尾市区＋红海湾 · 看海与逛吃安排一整天</p>
+            <button id="use-b-route" data-use-route="3" data-variant="shanwei" class="route-use">把这个 B 方案放进行程<span data-icon="arrow"></span></button>
+          </div>
+        </article>
+        <article class="route-card route-c">
+          <div class="route-image"><img src="assets/legacy/nanao-island.png" alt="南澳岛海岸" loading="lazy"><span class="route-number">C</span><span class="route-duration">3 OR 4 DAYS</span></div>
+          <div class="route-content"><span class="tag sage">海丰＋南澳 · 海岛自驾</span><h3>把时间交给海风<span>先选住几晚，再选第二天什么时候出发</span></h3>
+            <fieldset class="route-options route-length"><legend>想留多少时间？</legend>
+              <label class="route-choice"><input type="radio" name="c-duration" value="3" checked><span><strong>三天两夜 · 海岛尝鲜</strong><small>海丰 1 晚＋南澳 1 晚，第 3 天返程</small></span></label>
+              <label class="route-choice"><input type="radio" name="c-duration" value="4"><span><strong>四天三夜 · 多住一晚</strong><small>海丰 1 晚＋南澳 2 晚，第 4 天返程</small></span></label>
+            </fieldset>
+            <label class="route-departure" for="c-departure">第 2 天从海丰出发<select id="c-departure"><option value="12:00">12:00 · 中午出发</option><option value="14:00">14:00 · 海丰多留一会儿</option></select></label>
+            <p class="route-selection-summary" id="c-route-summary" aria-live="polite">DAY 1 海丰慢逛<br>DAY 2 中午出发，下午到岛入住<br>DAY 3 青澳湾 · 灯塔与海岸 · 午后返程</p>
+            <button id="use-c-route" data-use-route="3" data-variant="nanao" data-departure="12:00" class="route-use">把这个 C 方案放进行程<span data-icon="arrow"></span></button>
+          </div>
+        </article>
+      </div>
+      <p class="route-note"><span data-icon="calendar"></span>先选分支，再放进「我的行程」。每天的小店、停留和转场时间都可以继续修改。</p>
+      <div id="sights" class="sights-catalog" aria-labelledby="sights-heading">
+        <div class="sights-heading"><div><p class="eyebrow">PLACES TO TAKE YOUR TIME</p><h3 id="sights-heading">景点图鉴，挑喜欢的去。</h3><p>山里的古寺、老城的故事，或海边的一阵风。点开看看，再安排进旅程。</p></div><span class="sights-hand-note">除了好吃的<br>也留点时间看看 ↗</span></div>
+        <div class="sights-hotel-base"><div class="sights-hotel-icon"><span data-icon="pin"></span></div><div><span>大家的住宿起点</span><strong>海丰嘉豐国际酒店</strong><small>海城镇广富路 666 号</small></div><a href="https://uri.amap.com/search?keyword=%E6%B5%B7%E4%B8%B0%E5%98%89%E8%B1%90%E5%9B%BD%E9%99%85%E9%85%92%E5%BA%97%20%E6%B5%B7%E5%9F%8E%E9%95%87%E5%B9%BF%E5%AF%8C%E8%B7%AF666%E5%8F%B7&city=%E6%B1%95%E5%B0%BE&view=map&src=haifengslow" target="_blank" rel="noopener noreferrer">酒店地图 ↗</a></div>
+        
+        <div class="sights-toolbar"><div class="sights-group-filters" role="group" aria-label="按旅行片区筛选景点"><button type="button" data-sight-group="all" aria-pressed="true" class="active">全部地方</button><button type="button" data-sight-group="haifeng" aria-pressed="false">海丰慢逛</button><button type="button" data-sight-group="shanwei" aria-pressed="false">汕尾看海</button><button type="button" data-sight-group="nanao" aria-pressed="false">南澳海岛</button></div><label class="sight-type-label"><span>想看什么</span><select id="sight-type-filter" aria-label="按景点类型筛选"><option value="all">所有类型</option></select></label></div>
+        <p id="sight-count" class="sight-count" aria-live="polite"></p><div id="sight-grid" class="sight-grid"></div><p id="sight-empty" class="sight-empty" hidden>这个组合还没有景点，换个片区或类型看看。</p><div class="sight-more-wrap"><button id="sight-more" type="button" class="button outline">展开全部景点<span data-icon="down"></span></button></div>
+      </div>
+    </div></section>
+
+    <section id="areas" class="area-guide-section wrap section" aria-labelledby="area-guide-heading">
+      <div class="section-heading"><div><p id="area-guide-eyebrow" class="eyebrow">03 / A LITTLE SENSE OF PLACE</p><h2 id="area-guide-heading">山海之间，先认识海丰。</h2><p id="area-guide-intro" class="section-intro"></p></div></div>
+      <div class="food-section-nav-row">
+        <nav class="food-section-nav" aria-label="认识海丰跳转目录">
+          <a href="#area-geography">海丰及周边片区的地理分布关系</a>
+          <a href="#souvenirs">海丰特产与伴手礼</a>
+        </nav>
+      </div>
+      <div id="area-geography" class="area-geography"><h3 id="area-guide-geographyHeading"></h3><div id="area-guide-facts" class="area-guide-facts"></div></div>
+      <div id="area-regions" class="area-guide-subheading"><h3 id="area-guide-areaHeading"></h3><p id="area-guide-areaIntro"></p></div>
+      <div class="area-guide-places">
+        <div id="area-guide-grid" class="area-guide-grid"></div>
+        <aside id="area-map" class="area-map" aria-labelledby="area-guide-mapHeading">
+          <p id="area-guide-mapEyebrow" class="area-map-eyebrow">方位示意</p>
+          <h4 id="area-guide-mapHeading">山、城与海，慢慢连起来。</h4>
+          <svg class="area-map-drawing" viewBox="0 0 300 420" role="img" aria-labelledby="area-guide-mapHeading area-guide-mapCaption">
+            <g class="area-map-land" aria-hidden="true"><path d="M29 110C35 55 94 38 147 65c45-31 97 9 101 63 23 47 9 78 21 122 20 60-10 97-54 110-47 13-57-29-97-18-66 16-100-23-84-74-17-47-26-109-5-158Z"/><path class="area-map-water" d="M34 351c54-13 61 30 107 15s81-3 125 17v37H34Z"/></g>
+            <g class="area-map-lines" aria-hidden="true"><path d="m44 87 20-29 18 28 18-38 24 39m-69 9 15-20 13 20m6-5 11-17 13 18"/><path class="area-map-river" d="M116 117c-23 38 48 63 20 99s26 37 32 67c5 24 15 46 41 71"/><path class="area-map-coast" d="M34 351c54-13 61 30 107 15s81-3 125 17m-146 13c14 9 25 9 39 1m29 5c14 9 25 9 39 1m-160-23c11 7 21 8 32 3"/><path d="M264 57V28m-7 10 7-11 7 11"/></g>
+            <text id="area-guide-mapNorth" class="area-map-direction" x="264" y="20" text-anchor="middle">北 N</text>
+            <g class="area-map-point"><circle cx="98" cy="105" r="4"/><text id="area-guide-mapLotus" x="98" y="126" text-anchor="middle">莲花山</text></g>
+            <g class="area-map-point"><circle cx="221" cy="121" r="4"/><text id="area-guide-mapFair" x="221" y="143" text-anchor="middle">公平</text></g>
+            <g class="area-map-point area-map-county"><circle cx="133" cy="188" r="8"/><circle class="area-map-county-ring" cx="133" cy="188" r="15"/><text id="area-guide-mapCounty" x="133" y="220" text-anchor="middle">海丰县城</text></g>
+            <g class="area-map-point"><circle cx="241" cy="203" r="4"/><text id="area-guide-mapKetang" x="241" y="225" text-anchor="middle">可塘</text></g>
+            <g class="area-map-point"><circle cx="55" cy="282" r="4"/><text id="area-guide-mapMeilong" x="55" y="304" text-anchor="middle">梅陇</text></g>
+            <g class="area-map-point"><circle cx="174" cy="278" r="4"/><text id="area-guide-mapTaohe" x="174" y="300" text-anchor="middle">陶河</text></g>
+            <g class="area-map-point"><circle cx="245" cy="332" r="4"/><text id="area-guide-mapDahu" x="245" y="354" text-anchor="middle">大湖</text></g>
+            <text id="area-guide-mapSea" class="area-map-sea-label" x="161" y="408" text-anchor="middle">海岸与南海</text>
+          </svg>
+          <p id="area-guide-mapCaption" class="area-map-caption">以县城为中心，向北进山，向镇上寻味，再向东南去看海。</p>
+        </aside>
+      </div>
+      <div class="area-guide-foot"><p id="area-guide-closing"></p><button id="area-guide-sources" class="text-link" type="button">区位资料来源<span data-icon="arrow"></span></button></div>
+
+      <section id="souvenirs" class="souvenir-section" aria-labelledby="souvenir-heading">
+        <header class="souvenir-heading">
+          <p class="eyebrow">A LITTLE SOMETHING TO TAKE HOME</p>
+          <h3 id="souvenir-heading">把海丰的味道带回家。</h3>
+          <p>海丰的特产与伴手礼，从一袋咸香零嘴、一颗怀旧糖果和一罐莲花山茶挑起。想留个纪念，也可以看看两镇各有特色的饰品。</p>
+        </header>
+
+        <h4 class="souvenir-subheading">第一次来，先看这三样</h4>
+        <div class="souvenir-grid">
+          <article class="souvenir-card souvenir-pick souvenir-pick-savory">
+            <div class="souvenir-card-top">
+              <div><span class="souvenir-tag">公平镇 · 咸香零嘴</span><h5>公平牛肉脯</h5></div>
+              <svg class="souvenir-sketch" viewBox="0 0 64 56" aria-hidden="true" fill="none"><path d="M13 33l20-17 19 9-20 17zM13 33l2 5 17 8 20-17v-4M32 42v4M9 24l17-15 16 8-17 15zM9 24l2 5 6 3M25 32v3m-9-12 11-9m-5 13 11-9m0 19 10-8m-5 11 8-7"/></svg>
+            </div>
+            <p>蒜、辣椒和胡椒腌出浓香，烘烤后还有一点焦香。只带一样零嘴回家，可以先试它。</p>
+            <p class="souvenir-tip"><strong>怎么挑</strong> 先尝辣度和软硬，分送多人选小包装。</p>
+          </article>
+          <article class="souvenir-card souvenir-pick souvenir-pick-sweet">
+            <div class="souvenir-card-top">
+              <div><span class="souvenir-tag">海丰 · 怀旧糖果</span><h5>海丰猪油糖</h5></div>
+              <svg class="souvenir-sketch" viewBox="0 0 64 56" aria-hidden="true" fill="none"><path d="M22 17c7-5 18-4 23 3s2 15-5 19c-8 5-18 4-23-3s-2-15 5-19zM16 21 5 18l2 8-3 6 12 1m30-12 12-2-2 7 4 7-13 2m-22-13c5-2 12-1 14 3m-2 7c-3 3-8 4-12 2"/></svg>
+            </div>
+            <p>软软一颗，糖香里带一点油香。给爱吃甜、喜欢怀旧零食的朋友分几颗，刚刚好。</p>
+            <p class="souvenir-tip"><strong>怎么挑</strong> 独立包装方便分送，传统做法用猪油，买时看配料表。</p>
+          </article>
+          <article class="souvenir-card souvenir-pick souvenir-pick-tea">
+            <div class="souvenir-card-top">
+              <div><span class="souvenir-tag">莲花山脉 · 茶香</span><h5>海丰莲花山茶</h5></div>
+              <svg class="souvenir-sketch" viewBox="0 0 64 56" aria-hidden="true" fill="none"><path d="M11 29h32c0 11-6 18-16 18S11 40 11 29zm32 2h5c7 0 7 10 0 10h-7M8 50h42M27 25c-1-10 5-17 16-19-1 10-7 16-16 17m0 0c-1-7-7-12-15-13 1 8 7 12 15 13m0 0 10-12"/></svg>
+            </div>
+            <p>茶园在海丰西北部的莲花山脉。送平时爱喝茶的人，或给自己带一罐，回家慢慢泡。</p>
+            <p class="souvenir-tip"><strong>怎么挑</strong> 先试饮，按喜欢的香气和浓淡选小罐。</p>
+          </article>
+        </div>
+
+        <h4 class="souvenir-subheading">茶桌和厨房，也能带点海丰味</h4>
+        <div class="souvenir-grid">
+          <article class="souvenir-card"><span class="souvenir-tag">海丰供销手信 · 茶点</span><h5>芝麻酥、米花酥</h5><p>芝麻香和米香各挑一点，配茶或放在办公室分着吃。怕路上压碎，就选硬盒。</p></article>
+          <article class="souvenir-card"><span class="souvenir-tag">黄羌镇虎噉村 · 干货</span><h5>虎噉金针菜</h5><p>有地理标志保护的地方农产，也叫黄花菜。挑干制密封装，带给爱下厨的人蒸菜或煲汤。</p></article>
+          <article class="souvenir-card"><span class="souvenir-tag">公平镇 · 腊味</span><h5>公平腊肠</h5><p>切几片跟米饭一起蒸，就是一顿家常饭。按口味挑肥瘦和甜度，照包装说明存放。</p></article>
+        </div>
+
+        <h4 class="souvenir-subheading">想留一件旅行纪念</h4>
+        <div class="souvenir-grid souvenir-grid-pair">
+          <article class="souvenir-card"><span class="souvenir-tag">梅陇镇 · 金银首饰工艺</span><h5>梅陇银饰、小吊坠</h5><p>梅陇以金银首饰加工见长。想挑件平常也能戴的纪念品，可以看看小巧的银饰和吊坠，留意材质与工艺。</p></article>
+          <article class="souvenir-card"><span class="souvenir-tag">可塘镇 · 彩宝加工与商贸</span><h5>可塘彩宝手串</h5><p>喜欢颜色，可以在手串和小吊坠里慢慢挑。可塘是彩宝加工与交易地，原料产地和处理方式可看商品说明。</p></article>
+        </div>
+
+        <aside class="souvenir-pairings" aria-labelledby="souvenir-pairing-heading">
+          <h4 id="souvenir-pairing-heading">按送谁来挑</h4>
+          <dl>
+            <div><dt>同事、朋友</dt><dd>公平牛肉脯 ＋ 海丰猪油糖</dd></div>
+            <div><dt>爱喝茶的人</dt><dd>莲花山茶 ＋ 芝麻酥或米花酥</dd></div>
+            <div><dt>喜欢下厨的家人</dt><dd>虎噉金针菜 ＋ 公平腊肠</dd></div>
+            <div><dt>想留一份纪念</dt><dd>梅陇小银饰，或可塘手串</dd></div>
+          </dl>
+        </aside>
+        <p class="souvenir-regional"><strong>顺手再挑一份汕尾风味</strong> 遮浪马仔也有海丰企业生产，选购时可以看包装上标的生产地。</p>
+        <details class="souvenir-sources">
+          <summary>特产资料来源</summary>
+          <ul>
+            <li><a href="https://www.shanwei.gov.cn/slhwz/xqxw/content/post_1075615.html" target="_blank" rel="noopener noreferrer">汕尾日报 · 海丰供销手信系列</a></li>
+            <li><a href="https://www.shanwei.gov.cn/swtcj/csmp/xcmp/content/post_848914.html" target="_blank" rel="noopener noreferrer">汕尾市投资促进局 · 公平牛肉脯</a></li>
+            <li><a href="https://static.nfnews.com/content/202406/13/c8989012.html" target="_blank" rel="noopener noreferrer">南方＋ · 猪油糖与遮浪马仔</a></li>
+            <li><a href="https://www.shanwei.gov.cn/swny/hdhd/ywzsk/content/post_901627.html" target="_blank" rel="noopener noreferrer">汕尾市农业农村局 · 莲花山茶</a></li>
+            <li><a href="https://www.shanwei.gov.cn/slhwz/zwyw/content/post_1071044.html" target="_blank" rel="noopener noreferrer">汕尾日报 · 黄羌镇虎噉金针菜</a></li>
+            <li><a href="https://www.shanwei.gov.cn/shanwei/zwgk/jcxx/zwdt/qxxwa/content/post_1307191.html" target="_blank" rel="noopener noreferrer">汕尾日报 · 梅陇与可塘的首饰产业</a></li>
+          </ul>
+        </details>
+      </section>
+    </section>
+
+    <section id="your-journey" class="journey-overview wrap section" aria-labelledby="journey-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-journey-copy="eyebrow">04 / A TRIP TO CALL YOUR OWN</p><h2 id="journey-heading" data-journey-copy="heading">专属你的海丰之旅</h2><p class="section-intro" data-journey-copy="intro" hidden></p></div>
+        
+      </div>
+      <div class="food-section-nav-row" data-journey-nav>
+        <nav class="food-section-nav" aria-label="旅行章节跳转目录">
+          <a href="#planner" data-journey-copy="plannerLink">路线规划工具</a>
+        </nav>
+      </div>
+    </section>
+
+    <section id="planner" class="planner-section wrap section">
+      <div class="section-heading"><div><p class="eyebrow">MAKE IT YOURS</p><h2>我的海丰小旅行</h2><p class="section-intro">挑好味道，填上小店，把时间留给自己。</p></div><div class="planner-actions"><button id="share-plan" class="button outline"><span data-icon="share"></span>分享行程</button><button id="print-plan" class="button primary"><span data-icon="download"></span>打印 / 存为 PDF</button></div></div>
+      <div class="planner-settings"><div class="mode-toggle" role="group" aria-label="旅行天数"><button data-mode="2" class="active" aria-pressed="true">两天一夜</button><button data-mode="3" aria-pressed="false">三天两夜</button><button data-mode="4" aria-pressed="false">四天三夜</button></div><label>出发日期<input id="trip-date" type="date"></label><label>出行方式<select id="transport"><option value="drive">自驾 / 提前约车</option><option value="taxi">步行 + 打车</option></select></label><span class="autosave"><span class="status-dot"></span><span id="save-state">本机自动保存</span></span></div>
+      <div class="planner-layout"><aside id="wish-section" class="wishlist"><div class="wish-title"><h3>想吃清单 <span id="wish-count">0</span></h3><span data-icon="bowl"></span></div><p class="muted">先收集喜欢的，再挑一天去吃。</p><div id="wish-list"></div><a href="#food" class="add-more">＋ 继续挑好吃的</a><div class="custom-note"><span class="eyebrow">FRIENDS' PICK</span><h4>如果你有私藏的小店</h4><p>填上店名和位置，直接排进行程。</p><button id="add-custom" class="button outline">＋ 补一间小店 / 一个地点</button></div></aside>
+      <div class="itinerary"><div class="day-tabs" id="day-tabs" role="tablist" aria-label="选择旅行日"></div><div class="day-heading"><div><h3 id="day-title"></h3><p id="day-subtitle"></p></div><button id="auto-arrange" class="small-button"><span data-icon="clock"></span>顺着排好时间</button></div><div class="route-order-bar"><div class="route-order-heading"><div><strong>今天少走一点回头路</strong><p>按已知景点与片区粗排，固定时间和位置待补的站点保持。</p></div><button id="optimize-day" type="button" class="button primary"><span data-icon="pin"></span>一键顺路</button></div><div class="route-order-options"><label>出发起点<select id="route-order-origin"><option value="auto">自动选择</option><option value="hotel">嘉豐酒店片区</option><option value="first">当天第一站</option></select></label><span>只调整当前这一天</span><button id="undo-route-order" class="text-link" type="button" hidden>撤回这次顺路</button></div><p id="route-order-status" class="route-order-status" role="status" aria-live="polite" hidden></p></div><div id="day-warning" class="day-warning" role="status" hidden></div><div id="timeline"></div><div id="day-summary" class="day-summary"></div><div class="plan-help"><span data-icon="info"></span><p>时间和转场均可修改；转场为手动预留，未接入实时导航。填好小店地址后，可点击地图核对车程与营业时间。</p></div></div></div>
+      <p class="local-note"><button id="reset-plan">恢复当前路线示例</button></p>
+    </section>
+
+
+    <section id="tasted-log" class="tasted-log wrap" aria-labelledby="tasted-heading">
+      <div class="tasted-note">
+        <div class="tasted-note-head">
+          <div>
+            <p class="eyebrow">A TASTE TO REMEMBER</p>
+            <h2 id="tasted-heading">海丰吃过手记</h2>
+          </div>
+          <div class="tasted-note-tools">
+            <div class="tasted-stamp"><strong id="tasted-count">0</strong><small>道已尝</small></div>
+            <button id="tasted-export-open" type="button" class="tasted-export-open" aria-label="导出纪念卡" title="导出纪念卡" disabled><span data-icon="download" aria-hidden="true"></span><span>导出</span></button>
+          </div>
+        </div>
+        <p id="tasted-empty" class="tasted-empty">吃到喜欢的那一口，就在小吃卡片上点「吃过了，记一下」，给手记盖第一枚章。</p>
+        <ul id="tasted-list" class="tasted-list" hidden></ul>
+        <a id="tasted-browse" class="tasted-browse text-link" href="#food-toolbar">回小吃图鉴 <span data-icon="arrow" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <section id="notes" class="notes-section"><div class="wrap"><div class="notes-title"><p class="eyebrow">A FEW LITTLE NOTES</p><h2>出发前，留意这几件小事。</h2></div><div class="notes-grid"><article><span class="note-num">01</span><h3>住宿跟着路线走</h3><p>海丰县城适合觅食；接着去汕尾或南澳时，可按后半程地点安排住宿，尽量少来回折返。</p></article><article><span class="note-num">02</span><h3>山里和滨海，先安排车</h3><p>跨片区建议提前约车或自驾。车站到县城另留接驳时间，返程以实际车次倒推安排。</p></article><article><span class="note-num">03</span><h3>留点空白，才好加餐</h3><p>小吃可以分享着尝。景区开放与店铺售卖时段出发前再确认；跨城、上岛和沿海游览都留足转场时间。</p></article></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><a href="#home" class="brand"><span class="brand-mark">海<br>丰</span><span><strong>海丰慢慢吃</strong><small>GOOD FOOD. SLOW DAYS.</small></span></a><p>吃得开心，走得从容。<span>一份给海丰周末的旅行灵感 · 2026</span></p><button id="sources-button" class="text-link">内容与图片来源<span data-icon="arrow"></span></button></footer>
+  <a class="mobile-plan" href="#planner"><span data-icon="calendar"></span><span data-menu-label="planner">我的行程</span><span id="mobile-count">0</span><span data-icon="arrow"></span></a>
+  <dialog id="edit-dialog" aria-labelledby="edit-heading"><form id="edit-form"><div class="dialog-head"><div><p class="eyebrow">A LITTLE PLACE TO GO</p><h2 id="edit-heading">安排一口好吃的</h2></div><button type="button" class="icon-button" data-close aria-label="关闭"><span data-icon="x"></span></button></div><p id="edit-description" class="muted"></p><input type="hidden" id="edit-id"><label>美食 / 地点名称<input id="edit-name" required maxlength="60" placeholder="例如：朋友推荐的菜茶店"></label><label>想去的店名<input id="edit-shop" maxlength="80" placeholder="还没选好可以先留空"></label><label>位置 / 地图搜索词<input id="edit-address" maxlength="160" placeholder="建议写上“海丰”与完整地址"></label><div class="form-row"><label id="edit-region-field">片区<select id="edit-region"><option>县城</option><option>莲花山</option><option>大湖</option><option>梅陇</option><option>公平</option><option>其他</option></select></label><label id="edit-restaurant-region-field" hidden>片区（自动）<input id="edit-restaurant-region" readonly></label><label>安排在哪天<select id="edit-day"></select></label></div><div class="form-row"><label id="edit-time-field">开始时间<input id="edit-time" type="time" required></label><label id="edit-meal-field" hidden><span id="edit-meal-label">开始时间</span><select id="edit-meal" aria-labelledby="edit-meal-label" aria-describedby="edit-meal-time-hint" disabled><option value="08:00">早餐</option><option value="12:00">午餐</option><option value="18:00">晚餐</option></select><small id="edit-meal-time-hint" aria-live="polite"></small></label><label>停留分钟<input id="edit-duration" type="number" min="10" max="480" step="5" required></label></div><label class="edit-fixed-time"><input id="edit-fixed-time" type="checkbox">顺路时保留这个开始时间</label><p class="field-hint">名称与地址会包含在你分享的行程副本里。</p><button class="button primary dialog-submit" type="submit"><span id="edit-save-label">保存到我的行程</span><span data-icon="arrow"></span></button></form></dialog>
+  <dialog id="info-dialog" aria-labelledby="info-heading"><div class="dialog-head"><h2 id="info-heading"></h2><button class="icon-button" data-close aria-label="关闭"><span data-icon="x"></span></button></div><div id="info-content"></div></dialog>
+  <dialog id="tasted-export-dialog" class="tasted-export-dialog" aria-labelledby="tasted-export-heading">
+    <div class="dialog-head">
+      <div><p class="eyebrow">FROM HAIFENG, WITH APPETITE</p><h2 id="tasted-export-heading">海丰吃货纪念卡</h2></div>
+      <button type="button" class="icon-button" data-close aria-label="关闭"><span data-icon="x"></span></button>
+    </div>
+    <div class="tasted-export-layout">
+      <div class="tasted-export-controls">
+        <label for="tasted-export-date">纪念日期</label>
+        <input id="tasted-export-date" type="date">
+        <button id="tasted-export-add-photo" class="tasted-photo-label" type="button"><span data-icon="plus" aria-hidden="true"></span><span>加张照片（可选）</span></button>
+        <input id="tasted-export-photo" type="file" accept="image/*" hidden>
+        <button id="tasted-export-remove-photo" type="button" class="tasted-clear" hidden>移除纪念照</button>
+        <p class="muted">照片只放进你导出的卡片。</p>
+        <div class="tasted-export-actions">
+          <button id="tasted-export-pdf" class="button primary" type="button">下载 PDF</button>
+          <button id="tasted-export-image" class="button outline" type="button">保存本页图片</button>
+        </div>
+        <p id="tasted-export-status" class="muted" role="status"></p>
+      </div>
+      <div>
+        <div id="tasted-export-preview" class="tasted-export-preview" aria-label="纪念卡预览"></div>
+        <nav id="tasted-export-pages" class="tasted-export-pages" aria-label="纪念卡分页" hidden>
+          <button id="tasted-export-prev" type="button">上一页</button>
+          <span id="tasted-export-page-number"></span>
+          <button id="tasted-export-next" type="button">下一页</button>
+        </nav>
+      </div>
+    </div>
+  </dialog>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div id="toast" role="status" aria-live="polite"></div>
+  <span id="page-bottom" class="page-end-anchor" aria-hidden="true"></span>
+  <div class="page-jump-dock">
+    <nav class="page-jump-controls" aria-label="页面快速跳转">
+      <a href="#page-top" aria-label="一键到顶" title="一键到顶"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14M7 14l5-5 5 5M12 9v11"/></svg><span>到顶</span></a>
+      <button type="button" id="page-jump-toc-toggle" aria-expanded="false" aria-controls="page-jump-toc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h10M9 12h10M9 18h10M5 6h.01M5 12h.01M5 18h.01" stroke-linecap="round"/></svg><span>目录</span></button>
+      <a href="#page-bottom" aria-label="一键到底" title="一键到底"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19h14M7 10l5 5 5-5M12 4v11"/></svg><span>到底</span></a>
+    </nav>
+    <nav class="page-jump-toc" id="page-jump-toc" aria-labelledby="page-jump-toc-heading" hidden>
+      <div class="page-jump-toc-head">
+        <h2 id="page-jump-toc-heading">页面目录</h2>
+        <button type="button" id="page-jump-toc-close" aria-label="关闭目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="page-jump-toc-scroll">
+        <div class="page-jump-toc-group">
+          <ul><li><a href="#home">首页</a></li></ul>
+        </div>
+        <div class="page-jump-toc-group">
+          <h3><span class="page-jump-toc-number">01</span> 海丰美食</h3>
+          <ul>
+            <li><a href="#food-toolbar">小吃与甜品</a></li>
+            <li><a href="#restaurants">家常饭店</a></li>
+            <li><a href="#seafood-calendar">海鲜月历</a></li>
+          </ul>
+        </div>
+        <div class="page-jump-toc-group">
+          <h3><span class="page-jump-toc-number">02</span> 路线与景点</h3>
+          <ul>
+            <li><a href="#recommended-routes">三种推荐路线</a></li>
+            <li><a href="#sights">景点图鉴</a></li>
+          </ul>
+        </div>
+        <div class="page-jump-toc-group">
+          <h3><span class="page-jump-toc-number">03</span> 认识海丰</h3>
+          <ul>
+            <li><a href="#areas">海丰与周边概览</a></li>
+            <li><a href="#area-regions">各片区介绍</a></li>
+            <li><a href="#area-map">方位示意图</a></li>
+            <li><a href="#souvenirs">特产与伴手礼</a></li>
+          </ul>
+        </div>
+        <div class="page-jump-toc-group">
+          <h3><span class="page-jump-toc-number">04</span> 专属旅程</h3>
+          <ul>
+            <li><a href="#planner">路线规划工具</a></li>
+            <li><a href="#wish-section">想吃清单</a></li>
+            <li><a href="#timeline">当天行程</a></li>
+            <li><a href="#tasted-log">吃过手记</a></li>
+            <li><a href="#notes">出发小贴士</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

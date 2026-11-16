@@ -1,0 +1,32 @@
+'use strict';
+const AREA_GUIDE_DEFAULTS={
+ eyebrow:'03 / A LITTLE SENSE OF PLACE',heading:'山海之间，先认识海丰。',intro:'先认认地方，再跟着胃口出发。老城、山边和海岸，各有一段值得慢下来的日常。',
+ geographyHeading:'汕尾、海丰、陆丰，是什么关系？',
+ facts:[
+  {title:'汕尾，是这一程的大坐标。',body:'汕尾位于广东东南沿海，是一座地级市。海丰县就在汕尾市北部；旅程里常说的“汕尾市区”，通常指靠海的城区，和海丰县城是两个出行落点。'},
+  {title:'海丰，是我们这次的落脚点。',body:'海丰隶属汕尾，北有莲花山，南有海岸。县城以海城、城东、附城三镇为核心：把这里当作起点，先吃几口老城味道，再选一天进山或看海。'},
+  {title:'陆丰，是海丰东边的邻居。',body:'海丰与陆丰相邻，1731 年从海丰分置陆丰县。今天，海丰是县，陆丰是由汕尾代管的县级市。“海陆丰”这个名字，连着两地共同的历史与文化。'}
+ ],
+ areaHeading:'沿着胃口，认识这几个片区。',areaIntro:'县城慢慢吃，小镇专程尝；想换个节奏，就往山里或海边走。',
+ mapEyebrow:'方位示意',mapHeading:'山、城与海，慢慢连起来。',mapCaption:'以县城为中心，向北进山，向镇上寻味，再向东南去看海。',mapNorth:'北 N',mapSea:'海岸与南海',mapCounty:'海丰县城',mapLotus:'莲花山',mapFair:'公平',mapKetang:'可塘',mapMeilong:'梅陇',mapTaohe:'陶河',mapDahu:'大湖',
+ areas:[
+  {name:'海丰县城',tag:'海城 · 城东 · 附城',body:'老街、小店与日常生活在这里相遇。红宫红场、彭湃故居与街巷里的小吃，可以穿插着慢慢逛。住在县城，早起吃一碗、夜里再加一餐，都很自在。',taste:'小米 · 菜茶 · 猪肠粉 · 牛肉饼汤'},
+  {name:'公平',tag:'东北片区 · 小镇寻味',body:'海丰东北部的重要集镇，也有让人惦记的牛肉脯、饭茶与粿点。不急着赶下一站，坐下来吃一顿，再带一点喜欢的味道回去。',taste:'公平饭茶 · 三角粿 · 蛋清糕 · 牛肉脯'},
+  {name:'梅陇',tag:'西南片区 · 手工与烟火',body:'梅陇是海丰西南部的商贸重镇，也以首饰加工闻名。对这趟寻味之旅，先从一份菜包粿开始：薄皮裹住馅料，趁热分着尝，再逛逛镇上的日常。',taste:'梅陇菜包粿 · 韭菜馅'},
+  {name:'可塘',tag:'东部片区 · 彩宝与甜味',body:'海丰东部的可塘，以彩色宝石加工与交易闻名。逛过小镇，再循着食单找一碗西米露，让这一站带一点清甜的收尾。',taste:'可塘西米露'},
+  {name:'陶河',tag:'田野与乡间日常',body:'把脚步放慢一点，看看镇村的生活风景。食单里给陶河留了一份煎堆，适合找到喜欢的小店后，再为这一口安排一站。',taste:'陶河煎堆'},
+  {name:'莲花山',tag:'北向山林 · 山里慢走',body:'海丰县城北面的山地风景，适合留给绿意、山风与寺院。把莲花山、鸡鸣寺放在同一个出行方向里，走完再坐下来吃顿饭。',taste:'山边午餐 · 留一点散步时间'},
+  {name:'大湖',tag:'东南滨海 · 海边放空',body:'大湖在海丰东南部，海岸与湿地铺开了另一种风景。高螺湿地、古渔港与滨海风景，让逛吃的一天多一点海风，也多一点不赶路的空白。',taste:'海边走走 · 再找一顿海鲜'}
+ ],
+ closing:'不用一次走完。先在县城吃到喜欢的，再为一座小镇、一段山路或一阵海风，多留半天。'
+};
+function renderAreaGuide(){
+ const {facts, areas, ...copy}=AREA_GUIDE_DEFAULTS;
+ for(const [key, value] of Object.entries(copy)){
+  const node=$('area-guide-'+key);
+  node.textContent=value;
+  node.hidden=!value;
+ }
+ $('area-guide-facts').innerHTML=facts.map((row,index)=>`<article class="area-fact"><span class="area-fact-number">${String(index+1).padStart(2,'0')}</span><h4>${esc(row.title)}</h4><p>${esc(row.body)}</p></article>`).join('');
+ $('area-guide-grid').innerHTML=areas.map((row,index)=>`<article class="area-guide-card ${index===0?'area-guide-card-first':''}"><div class="area-card-top"><span class="area-card-number">${String(index+1).padStart(2,'0')}</span>${row.tag?`<span class="area-card-tag">${esc(row.tag)}</span>`:''}</div><h4>${esc(row.name)}</h4>${row.body?`<p>${esc(row.body)}</p>`:''}${row.taste?`<div class="area-taste"><span data-icon="bowl"></span><span>${esc(row.taste)}</span></div>`:''}</article>`).join('');decorate($('area-guide-grid'));
+}

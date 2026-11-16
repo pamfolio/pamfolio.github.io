@@ -1,0 +1,26 @@
+{
+  "title": "广东海丰周末慢游 ｜ 美食、景点及历史",
+  "description": "广东海丰周末慢游 ｜ 美食、景点及历史",
+  "hero": {
+    "location": "广东 · 汕尾 · 海丰",
+    "titleFirst": "把海丰，",
+    "titleSecond": "慢慢吃一遍。",
+    "intro": "一笼小米，一碗菜茶，一段不赶的时光。\n跟着胃口去旅行，把喜欢的味道排进周末。",
+    "foodLink": "挑选想吃的",
+    "routeLink": "看看三种旅行",
+    "foodNote": "按口味挑选",
+    "paceNote": "按自己的节奏",
+    "stickerTop": "来海丰",
+    "stickerTitle": "留个胃",
+    "stickerEnglish": "FOR GOOD FOOD",
+    "stripTitle": "山海之间，烟火日常。",
+    "stripText": "不用每站都打卡，吃到喜欢的，就很好。"
+  },
+  "mainCaption": "海丰小米",
+  "mainSubtitle": "一口，是认识一座城的开始。",
+  "smallCaption": "再来一碗，热热闹闹的菜茶。",
+  "mainImage": "assets/hero-xiaomi.jpg",
+  "mainImageAlt": "海丰小米在蒸盘里排列整齐，番薯粉皮晶莹透亮",
+  "smallImage": "assets/vegetable-tea.jpg",
+  "smallImageAlt": "菜茶，蔬菜与炒米的丰盛搭配"
+}
