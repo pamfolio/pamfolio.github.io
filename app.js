@@ -33,7 +33,7 @@ for(const [id,story] of Object.entries({"beef": "扁平的牛肉饼弹牙鲜香�
 Object.assign(FOODS.find(f=>f.id==='pancake'),{desc:'薄饼卷起咸香配菜，留给小吃的一口胃。',story:'薄饼卷起时蔬与咸香配菜，软韧又有层次。喜欢甜口的话，也可以试试单独收录的甜薄饼。'});
 const allFoods=()=>FOODS;
 const foodById=id=>FOODS.find(food=>food.id===id);
-const dayNames=()=>state.mode===2?['老城烟火','山里慢走']:state.mode===4?['海丰慢逛','出发南澳','海湾慢游','灯塔与返程']:state.variant==='nanao'?['海丰慢逛','出发南澳','海岛慢游']:['老城烟火','山里慢走',state.variant==='dahu'?'大湖与渔港':state.variant==='shanwei-city'?'汕尾逛吃':'汕尾与红海湾'];
+const dayNames=()=>state.mode===2?['老城烟火','山里慢走']:state.mode===4?['海丰慢逛','出发南澳','海湾慢游','灯塔与返程']:state.variant==='nanao'?['海丰慢逛','出发南澳','海岛慢游']:['老城烟火','山里慢走',state.variant==='dahu'?'大湖滨海':state.variant==='shanwei-city'?'汕尾逛吃':'汕尾与红海湾'];
 function defaultFixedTime(name){return /早餐|午餐|晚餐|聚餐|入住|退房|返程|取行李|海丰出发|前往南澳岛/.test(String(name||''));}
 function stop(name,region,time,duration,extra={}){return {uid:uid(),name,region,time,duration,fixedTime:defaultFixedTime(name),shop:'',address:'',buffer:20,...extra};}
 function legacyTemplate(mode){
@@ -53,7 +53,6 @@ function legacyTemplate(mode){
  if(mode===3)days.push([
   stop('县城早餐','县城','08:30',45,{buffer:0}),
   stop('大湖 · 高螺游客服务中心','大湖','10:30',60,{buffer:60,address:'海丰高螺游客服务中心'}),
-  stop('古渔港周边散步','大湖','11:50',45,{address:'海丰大德渔港'}),
   stop('大湖午餐','大湖','13:00',60),
   stop('回县城取行李 · 准备返程','县城','15:30',45,{buffer:60})
  ]);

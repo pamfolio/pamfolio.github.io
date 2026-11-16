@@ -346,55 +346,6 @@
       "photoCredit": "汕尾日报"
     },
     {
-      "id": "dade-harbor",
-      "name": "大德古渔港",
-      "area": "海丰 · 大湖滨海",
-      "region": "大湖",
-      "group": "haifeng",
-      "categories": [
-        "乡村生活",
-        "自然风景"
-      ],
-      "summary": "沿着渔港慢慢走，看渔船、水面与海边人家的日常。",
-      "description": "当地所说的古渔港也称大德渔港，是大湖滨海生态旅游区的一站。港边可感受渔民生活与平安渡口的民俗意象，也可顺路看看大德妈祖一带的滨海景色。",
-      "highlights": [
-        "渔船、港湾与海边人家的日常",
-        "与高螺游客中心串联成大湖滨海半日游"
-      ],
-      "address": "海丰县大湖镇大德渔港（古渔港）",
-      "mapQuery": "海丰大德渔港 古渔港",
-      "mapCity": "汕尾",
-      "duration": 45,
-      "visitMinutes": [
-        30,
-        60
-      ],
-      "distanceKm": [
-        35,
-        45
-      ],
-      "driveMinutes": [
-        50,
-        70
-      ],
-      "routeLabels": [
-        "B"
-      ],
-      "sources": [
-        {
-          "label": "汕尾市政府 · 景点介绍",
-          "url": "https://www.shanwei.gov.cn/slhwz/xqxw/content/post_1146047.html"
-        },
-        {
-          "label": "南方报业 · 地方介绍",
-          "url": "https://static.nfnews.com/content/202412/21/c10362837.html"
-        }
-      ],
-      "image": "",
-      "imageAlt": "大德古渔港实景",
-      "distanceBasis": "按酒店至大湖滨海片区的量级及古渔港位于滨海旅游带预留，非精确驾车路线；与高螺可串联而不应把两段酒店距离相加当作景点间车程。"
-    },
-    {
       "id": "jinding-bay",
       "name": "金町湾",
       "area": "汕尾市区 · 马宫片区",

@@ -64,7 +64,7 @@ function chooseLegacyRoute(mode,variant,departure='12:00'){
 function updateRouteChoices(){
  const variant=document.querySelector('[name="b-route"]:checked')?.value||'shanwei';
  const b=$('use-b-route');b.dataset.variant=variant;
- $('b-route-summary').textContent={dahu:'已选：海丰大湖滨海 · 留在海丰，走走湿地与渔港',shanwei:'已选：汕尾市区＋红海湾 · 看海与逛吃安排一整天','shanwei-city':'已选：汕尾市区轻松版 · 下午多留一点返程时间'}[variant];
+ $('b-route-summary').textContent={dahu:'已选：海丰大湖滨海 · 留在海丰，走走高螺湿地',shanwei:'已选：汕尾市区＋红海湾 · 看海与逛吃安排一整天','shanwei-city':'已选：汕尾市区轻松版 · 下午多留一点返程时间'}[variant];
  const mode=Number(document.querySelector('[name="c-duration"]:checked')?.value||3),departure=$('c-departure').value,c=$('use-c-route');
  c.dataset.useRoute=mode;c.dataset.departure=departure;
  $('c-route-summary').innerHTML=`DAY 1 海丰慢逛<br>DAY 2 ${departure==='14:00'?'下午出发，晚间到岛入住':'中午出发，下午到岛入住'}<br>${mode===4?'DAY 3 青澳湾 · 自然之门 · 海边慢游<br>DAY 4 灯塔 · 海岸公路 · 午后返程':'DAY 3 青澳湾 · 灯塔与海岸 · 午后返程'}`;
